@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RimEffect: Core - Extended Cut</name>
+	<author>Vanilla Expanded Team and Co.</author>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>RimEffect.Core.ExtendedCut</packageId>
+	<modDependencies>
+        <li>
+            <packageId>RimEffect.Core</packageId>
+            <displayName>RimEffect: Core - Extended Cut</displayName>
+            <downloadUrl>https://github.com/AndroidQuazar/RimEffect-Core</downloadUrl>
+        </li>
+    </modDependencies>
+	<loadAfter>
+		<li>vanillaexpanded.achievements</li>
+		<li>RimEffect.Core</li>
+	</loadAfter>
+	<description></description>
+</ModMetaData>
