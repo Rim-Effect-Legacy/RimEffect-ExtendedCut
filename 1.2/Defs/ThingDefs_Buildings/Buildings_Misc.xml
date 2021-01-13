@@ -16,9 +16,6 @@
             <Mass>4</Mass>
         </statBases>
         <minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsMisc</li>
-		</thingCategories>
         <thingCategories>
             <li>BuildingsMisc</li>
         </thingCategories>

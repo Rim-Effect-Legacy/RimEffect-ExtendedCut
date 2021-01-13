@@ -6,7 +6,7 @@
         <label>cargo crate</label>
         <description>A metal cargo crate. Impassable. Cannot hold roof.</description>
         <graphicData>
-            <texPath>Things/Building/Props/PropCrateBigA/PropCrateBigA</texPath>
+            <texPath>Things/Building/Props/PropCrateBig</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(2.5,4)</drawSize>
             <shadowData>
@@ -43,14 +43,14 @@
 		<label>barrel</label>
 		<description>A medium sized, triple sealed, password protected box.</description>
 		<graphicData>	
-		  <texPath>Things/Building/Props/PropBarrel/PropBarrel</texPath>
+		  <texPath>Things/Building/Props/PropBarrelA/PropBarrelA</texPath>
 		  <graphicClass>Graphic_Multi</graphicClass>
 		  <drawSize>(2,2)</drawSize>
 		</graphicData>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
-		<fillPercent>0.2</fillPercent>
+        <fillPercent>1</fillPercent>
 		<statBases>
 		  <MaxHitPoints>70</MaxHitPoints>
 		  <WorkToBuild>100</WorkToBuild>
@@ -73,7 +73,7 @@
 		<label>chest</label>
 		<description>A medium sized, triple sealed, password protected box.</description>
 		<graphicData>	
-		  <texPath>Things/Building/Props/PropChestA/PropChestA</texPath>
+		  <texPath>Things/Building/Props/PropChestAPropChestA</texPath>
 		  <graphicClass>Graphic_Multi</graphicClass>
 		  <drawSize>(2,1)</drawSize>
 		</graphicData>
@@ -104,7 +104,7 @@
 		<label>alliance chest</label>
 		<description>A medium sized, triple sealed, password protected box.</description>
 		<graphicData>	
-		  <texPath>Things/Building/Props/PropAllianceChestA/PropAllianceChestA</texPath>
+		  <texPath>Things/Building/Props/PropAllianceChest/PropAllianceChest</texPath>
 		  <graphicClass>Graphic_Multi</graphicClass>
 		  <drawSize>(2,1)</drawSize>
 		</graphicData>
