@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
+
 	<name>RimEffect: Core - Extended Cut</name>
 	<author>Vanilla Expanded Team and Co.</author>
 	<supportedVersions>
@@ -16,6 +17,8 @@
 	<loadAfter>
 		<li>vanillaexpanded.achievements</li>
 		<li>RimEffect.Core</li>
+		<li>VanillaExpanded.VFEPropsandDecor</li>
 	</loadAfter>
 	<description></description>
+
 </ModMetaData>

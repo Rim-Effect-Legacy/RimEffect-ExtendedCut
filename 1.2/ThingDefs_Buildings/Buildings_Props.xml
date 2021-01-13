@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RE_AllianceCrateBig</defName>
+        <label>cargo crate</label>
+        <description>A metal cargo crate. Impassable. Cannot hold roof.</description>
+        <graphicData>
+            <texPath>Things/Building/RimEffectProps/AllianceCrateBig/AllianceCrateBig</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.30, 0.40)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <castEdgeShadows>True</castEdgeShadows>
+        <blockWind>true</blockWind>
+        <passability>Impassable</passability>
+        <fillPercent>1</fillPercent>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <repairEffect>ConstructMetal</repairEffect>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>500</WorkToBuild>
+            <Mass>100</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+        </costList>
+        <designationCategory>PropsandDecor</designationCategory>
+        <uiIconScale>1</uiIconScale>
+        <building>
+            <isInert>true</isInert>
+        </building>
+    </ThingDef>
+
+</Defs>

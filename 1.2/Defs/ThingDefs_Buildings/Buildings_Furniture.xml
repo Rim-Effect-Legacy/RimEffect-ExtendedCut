@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="FurnitureWithQualityBase">
+        <defName>RE_PrefabEndTableWithLampOrange</defName>
+        <label>prefab end table with lamp (orange)</label>
+        <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
+        <surfaceType>Item</surfaceType>
+        <thingClass>Building</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.4</fillPercent>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <canOverlapZones>false</canOverlapZones>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <graphicData>
+            <texPath>Things/Building/Furniture/PrefabBedsideTableLampOrange/PrefabBedsideTableLampOrange</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+            </shadowData>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>0.65</uiIconScale>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Mass>5</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>3</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+        <costList>
+            <RE_PrefabComponent>2</RE_PrefabComponent>
+        </costList>
+        <pathCost>30</pathCost>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <Comfort>0.07</Comfort>
+                </statOffsets>
+                <maxSimultaneous>1</maxSimultaneous>
+                <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>20</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(242,191,129,0)</glowColor>
+            </li>
+        </comps>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
+        <castEdgeShadows>false</castEdgeShadows>
+        <techLevel>Spacer</techLevel>
+    </ThingDef>
+
+    <ThingDef ParentName="FurnitureWithQualityBase">
+        <defName>RE_PrefabBedsideTableLampOrange</defName>
+        <label>prefab bedside table with lamp (orange)</label>
+        <description>A small prefab bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect. Lights a small area in mild blue.</description>
+        <surfaceType>Item</surfaceType>
+        <thingClass>Building</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.4</fillPercent>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <canOverlapZones>false</canOverlapZones>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <graphicData>
+            <texPath>Things/Building/Furniture/PrefabEndTableLampOrange/PrefabEndTableLampOrange</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+            </shadowData>
+            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>0.65</uiIconScale>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>800</WorkToBuild>
+            <Mass>5</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>3</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <RE_PrefabComponent>2</RE_PrefabComponent>
+        </costList>
+        <pathCost>30</pathCost>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <Comfort>0.1</Comfort>
+                </statOffsets>
+                <maxSimultaneous>1</maxSimultaneous>
+                <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>20</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(242,191,129,0)</glowColor>
+            </li>
+        </comps>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
+        <castEdgeShadows>false</castEdgeShadows>
+        <techLevel>Spacer</techLevel>
+    </ThingDef>
+	
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>RE_PrefabHoloTable</defName>
+    <label>holo table</label>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabHoloTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.8,4.8)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+<designationCategory>Joy</designationCategory>
+    <pathCost>42</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <canOverlapZones>false</canOverlapZones>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(3,3)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>false</rotatable>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>9</watchBuildingStandRectWidth>
+      <watchBuildingStandRectHight>9</watchBuildingStandRectHighth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+</Defs>
