@@ -23,9 +23,6 @@
 		<designationCategory>Joy</designationCategory>
 		<pathCost>42</pathCost>
 		<fillPercent>0.4</fillPercent>
-		<thingCategories>
-			<li>BuildingsJoy</li>
-		</thingCategories>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<canOverlapZones>false</canOverlapZones>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -46,8 +43,6 @@
 			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
 			<watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
 			<watchBuildingStandRectWidth>9</watchBuildingStandRectWidth>
-			<watchBuildingStandRectHight>9
-			</watchBuildingStandRectHighth>
 			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
 			<effectWatching>WatchingTelevision</effectWatching>
 		</building>

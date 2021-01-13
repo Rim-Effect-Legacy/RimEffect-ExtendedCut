@@ -2,11 +2,11 @@
 <Defs>
 
     <ThingDef ParentName="BuildingBase">
-        <defName>RE_AllianceCrateBig</defName>
+        <defName>RE_PropCrateBig</defName>
         <label>cargo crate</label>
         <description>A metal cargo crate. Impassable. Cannot hold roof.</description>
         <graphicData>
-            <texPath>Things/Building/Props/AllianceCrateBig/AllianceCrateBig</texPath>
+            <texPath>Things/Building/Props/PropCrateBigA/PropCrateBigA</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(2.5,4)</drawSize>
             <shadowData>
@@ -37,5 +37,97 @@
             <isInert>true</isInert>
         </building>
     </ThingDef>
+	
+	  <ThingDef ParentName="BuildingBase">
+		<defName>RE_PropBarrel</defName>
+		<label>barrel</label>
+		<description>A medium sized, triple sealed, password protected box.</description>
+		<graphicData>	
+		  <texPath>Things/Building/Props/PropBarrel/PropBarrel</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>(2,2)</drawSize>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+		<fillPercent>0.2</fillPercent>
+		<statBases>
+		  <MaxHitPoints>70</MaxHitPoints>
+		  <WorkToBuild>100</WorkToBuild>
+		  <Mass>5</Mass>
+		  <Flammability>0.7</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+		  <Steel>5</Steel>
+		</costList>
+		<uiIconScale>1</uiIconScale>
+		<designationCategory>PropsandDecor</designationCategory>
+		<building>
+				  <isInert>true</isInert>
+		</building>
+	  </ThingDef>
+	
+	  <ThingDef ParentName="BuildingBase">
+		<defName>RE_PropChestA</defName>
+		<label>chest</label>
+		<description>A medium sized, triple sealed, password protected box.</description>
+		<graphicData>	
+		  <texPath>Things/Building/Props/PropChestA/PropChestA</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>(2,1)</drawSize>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.2</fillPercent>
+		<statBases>
+		  <MaxHitPoints>70</MaxHitPoints>
+		  <WorkToBuild>100</WorkToBuild>
+		  <Mass>5</Mass>
+		  <Flammability>0.7</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<costList>
+		  <Steel>5</Steel>
+		</costList>
+		<designationCategory>PropsandDecor</designationCategory>
+		<uiIconScale>1</uiIconScale>
+		<designatorDropdown>RE_PropsChests</designatorDropdown>
+		<building>
+				  <isInert>true</isInert>
+		</building>
+	  </ThingDef>
+	  
+	  <ThingDef ParentName="BuildingBase">
+		<defName>RE_PropAllianceChest</defName>
+		<label>alliance chest</label>
+		<description>A medium sized, triple sealed, password protected box.</description>
+		<graphicData>	
+		  <texPath>Things/Building/Props/PropAllianceChestA/PropAllianceChestA</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>(2,1)</drawSize>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.2</fillPercent>
+		<statBases>
+		  <MaxHitPoints>70</MaxHitPoints>
+		  <WorkToBuild>100</WorkToBuild>
+		  <Mass>5</Mass>
+		  <Flammability>0.7</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<costList>
+		  <Steel>5</Steel>
+		</costList>
+		<designationCategory>PropsandDecor</designationCategory>
+		<uiIconScale>1</uiIconScale>
+		<designatorDropdown>RE_PropsChests</designatorDropdown>
+		<building>
+				  <isInert>true</isInert>
+		</building>
+	  </ThingDef>
 
 </Defs>
