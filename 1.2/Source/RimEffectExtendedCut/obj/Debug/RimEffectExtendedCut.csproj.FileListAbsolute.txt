@@ -1,0 +1,7 @@
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Assemblies\RimEffectExtendedCut.dll
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Assemblies\RimEffectExtendedCut.pdb
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CopyComplete
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.dll
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.pdb
