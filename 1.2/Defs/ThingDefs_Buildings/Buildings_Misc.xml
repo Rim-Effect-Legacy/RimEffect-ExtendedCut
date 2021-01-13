@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="StandingLampBase" >
+        <defName>RE_OutdoorLamp</defName>
+        <label>outdoor lamp</label>
+        <description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/PreFab_OutdoorLamp</texPath>
+			<drawSize>(0.8,0.8)</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+        <statBases>
+            <Mass>4</Mass>
+        </statBases>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+            <li>Batteries</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>8</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlantSolar</compClass>
+                <basePowerConsumption>-0.2</basePowerConsumption>
+                <transmitsPower>false</transmitsPower>
+            </li>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>86</storedEnergyMax>
+                <efficiency>0.5</efficiency>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <transmitsPower>false</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>8</glowRadius>
+                <glowColor>(152,167,250,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
