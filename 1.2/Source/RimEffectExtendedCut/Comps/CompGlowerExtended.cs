@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace RimEffectExtendedCut
 
 		public float glowRadius = 14f;
 
+        public string texPath;
+
 		public ColorInt glowColor = new ColorInt(255, 255, 255, 0) * 1.45f;
 
 		public string colorLabel = "";
@@ -37,6 +40,7 @@ namespace RimEffectExtendedCut
 		private ColorOption currentColor;
 		private int currentColorInd;
         private CompGlower compGlower;
+        private bool dirty;
         public CompProperties_GlowerExtended Props => (CompProperties_GlowerExtended)props;
         public override string TransformLabel(string label)
         {
@@ -47,7 +51,17 @@ namespace RimEffectExtendedCut
         {
             base.PostSpawnSetup(respawningAfterLoad);
 			this.currentColor = Props.colorOptions[currentColorInd];
-			this.UpdateGlower(currentColorInd);
+            this.dirty = true;
+        }
+        public override void PostDraw()
+        {
+            base.PostDraw();
+            if (dirty)
+            {
+                this.UpdateGlower(currentColorInd);
+                this.ChangeGraphic();
+                dirty = false;
+            }
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
@@ -59,10 +73,12 @@ namespace RimEffectExtendedCut
                     if (this.currentColorInd == Props.colorOptions.Count - 1)
                     {
                         this.UpdateGlower(0);
+                        this.ChangeGraphic();
                     }
                     else
                     {
                         this.UpdateGlower(this.currentColorInd + 1);
+                        this.ChangeGraphic();
                     }
                 };
                 command_Action.defaultLabel = "RE.SwitchLightColor".Translate();
@@ -80,6 +96,9 @@ namespace RimEffectExtendedCut
                 base.parent.Map.glowGrid.DeRegisterGlower(this.compGlower);
             }
             var colorOption = Props.colorOptions[colorOptionInd];
+            this.currentColor = colorOption;
+            this.currentColorInd = colorOptionInd;
+
             this.compGlower = new CompGlower();
             this.compGlower.parent = this.parent;
             this.compGlower.Initialize(new CompProperties_Glower()
@@ -88,10 +107,26 @@ namespace RimEffectExtendedCut
                 glowRadius = colorOption.glowRadius,
                 overlightRadius = colorOption.overlightRadius
             });
-            this.currentColor = colorOption;
-            this.currentColorInd = colorOptionInd;
+            
             base.parent.Map.mapDrawer.MapMeshDirty(base.parent.Position, MapMeshFlag.Things);
             base.parent.Map.glowGrid.RegisterGlower(this.compGlower);
+        }
+
+        public void ChangeGraphic()
+        {
+            if (!this.currentColor.texPath.NullOrEmpty())
+            {
+                var graphicData = new GraphicData();
+                graphicData.graphicClass = this.parent.def.graphicData.graphicClass;
+                graphicData.texPath = this.currentColor.texPath;
+                graphicData.shaderType = this.parent.def.graphicData.shaderType;
+                graphicData.drawSize = this.parent.def.graphicData.drawSize;
+                graphicData.color = this.parent.def.graphicData.color;
+                graphicData.colorTwo = this.parent.def.graphicData.colorTwo;
+                var newGraphic = graphicData.GraphicColoredFor(this.parent);
+                Traverse.Create(this.parent).Field("graphicInt").SetValue(newGraphic);
+                base.parent.Map.mapDrawer.MapMeshDirty(this.parent.Position, MapMeshFlag.Things);
+            }
         }
 
         public override void PostExposeData()

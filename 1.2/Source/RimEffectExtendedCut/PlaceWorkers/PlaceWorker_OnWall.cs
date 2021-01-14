@@ -12,12 +12,10 @@ namespace RimEffectExtendedCut
 		public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
 		{
 			AcceptanceReport result = false;
-			if (!loc.Impassable(map) && loc.InBounds(map))
+			var edifice = loc.GetEdifice(map);
+			if (loc.InBounds(map) && (edifice?.def.defName.ToLower().Contains("wall") ?? false))
 			{
-				if ((loc + rot.FacingCell).Impassable(map))
-				{
-					result = true;
-				}
+				result = true;
 			}
 			return result;
 		}

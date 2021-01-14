@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- RE_PrefabEndTableWithLamp -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]/comps</xpath>
+				<success>Always</success>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]</xpath>
+					<value>
+						<comps />
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]/comps</xpath>
+				<value>
+					<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
+						<colorOptions>
+							<li>
+								<glowRadius>13</glowRadius>
+								<glowColor>(217,0,0,0)</glowColor>
+								<colorLabel>Red</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
+							</li>
+							<li>
+								<glowRadius>13</glowRadius>
+								<glowColor>(50,205,50,0)</glowColor>
+								<colorLabel>Green</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabEndTableLampOrange/PrefabEndTableLampOrange</texPath>
+							</li>
+						</colorOptions>
+					</li>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>
