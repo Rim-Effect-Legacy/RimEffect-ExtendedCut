@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PreFabWallLight</defName>
-		<label>wall light</label>
+		<label>prefab wall light</label>
 		<description>A wall light that lights an area in a red color.</description>
 		<thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
 		<graphicData>
@@ -72,7 +72,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PrefabHoloTable</defName>
-		<label>holo table</label>
+		<label>prefab holo table</label>
 		<description>People eat off tables when chairs are placed facing them.</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PrefabHoloTable</texPath>

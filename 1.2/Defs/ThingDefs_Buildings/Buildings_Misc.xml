@@ -41,7 +41,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="RE_StandingLampBase" ParentName="RE_LampBase">
+	<ThingDef Abstract="True" Name="RE_OutdoorLampBase" ParentName="RE_LampBase">
 		<graphicData>
 			<texPath>Things/Building/Furniture/LampStanding</texPath>
 		</graphicData>
@@ -53,13 +53,13 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="RE_StandingLampBase" >
+	<ThingDef ParentName="RE_OutdoorLampBase" >
 		<defName>RE_OutdoorLamp</defName>
 		<label>outdoor lamp</label>
 		<description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Building/Furniture/PreFab_OutdoorLamp</texPath>
+			<texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
 			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
 		<costList>
