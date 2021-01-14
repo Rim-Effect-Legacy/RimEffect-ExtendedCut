@@ -10,6 +10,7 @@
 			<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.1,1.1</drawSize>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<passability>Standable</passability>
@@ -53,13 +54,13 @@
 			<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
 				<colorOptions>
 					<li>
-						<glowRadius>5</glowRadius>
+						<glowRadius>8</glowRadius>
 						<glowColor>(152,167,250,0)</glowColor>
 						<colorLabel>blue</colorLabel>
 						<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
 					</li>
 					<li>
-						<glowRadius>5</glowRadius>
+						<glowRadius>8</glowRadius>
 						<glowColor>(244,182,115,0)</glowColor>
 						<colorLabel>orange</colorLabel>
 						<texPath>Things/Building/Furniture/PreFabWallLightOrange/PreFabWallLightOrange</texPath>
