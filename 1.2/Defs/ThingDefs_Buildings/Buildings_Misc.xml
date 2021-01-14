@@ -84,10 +84,22 @@
 				<efficiency>0.5</efficiency>
 				<shortCircuitInRain>false</shortCircuitInRain>
 			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>8</glowRadius>
-				<glowColor>(152,167,250,0)</glowColor>
-			</li>
+			<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
+                <colorOptions>
+                    <li>
+                        <glowRadius>7</glowRadius>
+                        <glowColor>(152,167,250,0)</glowColor>
+                        <colorLabel>blue</colorLabel>
+                        <texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
+                    </li>
+                    <li>
+                        <glowRadius>7</glowRadius>
+                        <glowColor>(244,182,115,0)</glowColor>
+                        <colorLabel>orange</colorLabel>
+                        <texPath>Things/Building/Furniture/PreFabOutdoorLampOrange/PreFabOutdoorLampOrange</texPath>
+                    </li>
+                </colorOptions>
+            </li>
 		</comps>
 	</ThingDef>
 
