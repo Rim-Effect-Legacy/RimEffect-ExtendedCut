@@ -6,8 +6,8 @@
         <label>outdoor lamp</label>
         <description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
         <graphicData>
-            <texPath>Things/Building/Furniture/PreFab_OutdoorLamp</texPath>
-			<drawSize>(0.8,0.8)</drawSize>
+            <texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
+            <drawSize>(0.8,0.8)</drawSize>
         </graphicData>
         <costList>
             <Steel>20</Steel>
@@ -40,8 +40,24 @@
                 <transmitsPower>false</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>8</glowRadius>
+                <glowRadius>7</glowRadius>
                 <glowColor>(152,167,250,0)</glowColor>
+            </li>
+            <li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
+                <colorOptions>
+                    <li>
+                        <glowRadius>7</glowRadius>
+                        <glowColor>(152,167,250,0)</glowColor>
+                        <colorLabel>blue</colorLabel>
+                        <texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
+                    </li>
+                    <li>
+                        <glowRadius>7</glowRadius>
+                        <glowColor>(244,182,115,0)</glowColor>
+                        <colorLabel>orange</colorLabel>
+                        <texPath>Things/Building/Furniture/PreFabOutdoorLampOrange/PreFabOutdoorLampOrange</texPath>
+                    </li>
+                </colorOptions>
             </li>
         </comps>
     </ThingDef>
