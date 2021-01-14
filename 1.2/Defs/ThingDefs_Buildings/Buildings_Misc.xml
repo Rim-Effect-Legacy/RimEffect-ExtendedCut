@@ -78,9 +78,9 @@
 		</researchPrerequisites>
 		<comps>
 			<li Class="RimEffectExtendedCut.CompProperties_OutDoorLamp">
-				<basePowerConsumption>8</basePowerConsumption>
-				<transmitsPower>false</transmitsPower>
 				<storedEnergyMax>50</storedEnergyMax>
+				<selfCharging>30</selfCharging>
+				<maxSolarPowerGain>300</maxSolarPowerGain>
 				<efficiency>0.5</efficiency>
 				<shortCircuitInRain>false</shortCircuitInRain>
 			</li>
