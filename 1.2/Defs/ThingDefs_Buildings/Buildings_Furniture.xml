@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_PreFabWallLight</defName>
+		<label>wall light</label>
+		<description>A wall light that lights an area in a red color.</description>
+		<thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<size>(1, 1)</size>
+		<placeWorkers>
+			<li>RimEffectExtendedCut.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<allowWireConnection>false</allowWireConnection>
+		</building>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<destroyable>true</destroyable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<canOverlapZones>true</canOverlapZones>
+		<researchPrerequisites>
+			<li>ColoredLights</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>15</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
+				<colorOptions>
+					<li>
+						<glowRadius>5</glowRadius>
+						<glowColor>(152,167,250,0)</glowColor>
+						<colorLabel>blue</colorLabel>
+						<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
+					</li>
+					<li>
+						<glowRadius>5</glowRadius>
+						<glowColor>(244,182,115,0)</glowColor>
+						<colorLabel>orange</colorLabel>
+						<texPath>Things/Building/Furniture/PreFabWallLightOrange/PreFabWallLightOrange</texPath>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PrefabHoloTable</defName>
 		<label>holo table</label>
@@ -18,6 +86,7 @@
 		</graphicData>
 		<thingClass>Building</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
 		<designationCategory>Joy</designationCategory>
