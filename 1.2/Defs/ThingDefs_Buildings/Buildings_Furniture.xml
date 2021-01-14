@@ -6,6 +6,7 @@
 		<label>prefab wall light</label>
 		<description>A wall light that lights an area in a red color.</description>
 		<thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

@@ -80,7 +80,7 @@
 			<li Class="RimEffectExtendedCut.CompProperties_OutDoorLamp">
 				<basePowerConsumption>8</basePowerConsumption>
 				<transmitsPower>false</transmitsPower>
-				<storedEnergyMax>86</storedEnergyMax>
+				<storedEnergyMax>50</storedEnergyMax>
 				<efficiency>0.5</efficiency>
 				<shortCircuitInRain>false</shortCircuitInRain>
 			</li>
