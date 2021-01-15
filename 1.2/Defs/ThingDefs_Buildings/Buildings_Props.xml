@@ -73,7 +73,7 @@
         </building>
     </ThingDef>
 	
-	  <ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PropBarrel</defName>
 		<label>barrel</label>
 		<description>A medium sized, triple sealed, password protected box.</description>
@@ -101,7 +101,7 @@
 		<building>
 				  <isInert>true</isInert>
 		</building>
-	  </ThingDef>
+	</ThingDef>
 	
 	  <ThingDef ParentName="BuildingBase">
 		<defName>RE_PropChestA</defName>
