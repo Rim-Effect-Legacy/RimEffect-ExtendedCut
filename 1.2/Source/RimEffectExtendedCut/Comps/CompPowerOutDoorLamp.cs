@@ -15,6 +15,10 @@ namespace RimEffectExtendedCut
 		public float storedEnergyMax = 1000f;
 
 		public float efficiency = 0.5f;
+
+		public float selfCharging = 30f;
+
+		public float maxSolarPowerGain = 300f;
 		public CompProperties_OutDoorLamp()
         {
 			compClass = typeof(CompPowerOutDoorLamp);
@@ -22,7 +26,7 @@ namespace RimEffectExtendedCut
 	}
 	public class CompPowerOutDoorLamp : ThingComp
 	{
-		private float SolarPower => Mathf.Lerp(0f, 1700f, parent.Map.skyManager.CurSkyGlow) * RoofedPowerOutputFactor;
+		private float SolarPower => Mathf.Lerp(0f, Props.maxSolarPowerGain, parent.Map.skyManager.CurSkyGlow) * RoofedPowerOutputFactor;
 		protected float DesiredPowerOutput => SolarPower;
 		private float RoofedPowerOutputFactor
 		{
@@ -43,9 +47,6 @@ namespace RimEffectExtendedCut
 		}
 
 		private float storedEnergy;
-
-		private const float SelfDischargingWatts = 5f;
-
 		public float AmountCanAccept
 		{
 			get
@@ -65,7 +66,13 @@ namespace RimEffectExtendedCut
 
 		public CompProperties_OutDoorLamp Props => (CompProperties_OutDoorLamp)props;
 
-		public override void PostExposeData()
+		private CompGlowerExtended compGlowerExtended;
+		public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+			compGlowerExtended = this.parent.GetComp<CompGlowerExtended>();
+		}
+        public override void PostExposeData()
 		{
 			base.PostExposeData();
 			Scribe_Values.Look(ref storedEnergy, "storedPower", 0f);
@@ -81,7 +88,22 @@ namespace RimEffectExtendedCut
 			base.CompTick();
 			var gainedEnergy = DesiredPowerOutput;
 			AddEnergy(gainedEnergy * CompPower.WattsToWattDaysPerTick);
-			DrawPower(Mathf.Min(5f * CompPower.WattsToWattDaysPerTick, storedEnergy));
+			DrawPower(Mathf.Min(Props.selfCharging * CompPower.WattsToWattDaysPerTick, storedEnergy));
+			if (compGlowerExtended != null)
+            {
+				if (storedEnergy <= 0)
+				{
+					if (compGlowerExtended.compGlower != null)
+                    {
+						compGlowerExtended.RemoveGlower();
+					}
+				}
+				else if (compGlowerExtended.compGlower == null)
+                {
+					compGlowerExtended.UpdateGlower(compGlowerExtended.currentColorInd);
+				}
+			}
+
 		}
 		public void AddEnergy(float amount)
 		{
@@ -129,7 +151,7 @@ namespace RimEffectExtendedCut
 			t += "\n" + "PowerBatteryEfficiency".Translate() + ": " + (props.efficiency * 100f).ToString("F0") + "%";
 			if (storedEnergy > 0f)
 			{
-				t += "\n" + "SelfDischarging".Translate() + ": " + 5f.ToString("F0") + " W";
+				t += "\n" + "SelfDischarging".Translate() + ": " + Props.selfCharging.ToString("F0") + " W";
 			}
 			return t;
 		}
