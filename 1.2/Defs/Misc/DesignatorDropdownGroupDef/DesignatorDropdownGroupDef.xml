@@ -8,5 +8,9 @@
     <DesignatorDropdownGroupDef>
         <defName>RE_ColonialRecRoomStoneTile</defName>
     </DesignatorDropdownGroupDef>
+	
+    <DesignatorDropdownGroupDef>
+        <defName>RE_AllianceRug1x2</defName>
+    </DesignatorDropdownGroupDef>
 
 </Defs>

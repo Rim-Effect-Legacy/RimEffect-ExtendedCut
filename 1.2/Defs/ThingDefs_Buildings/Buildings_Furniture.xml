@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>RE_PreFabWallLight</defName>
-		<label>prefab wall light</label>
-		<description>A wall light that lights an area in a red color.</description>
-		<thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
-		<tickerType>Normal</tickerType>
-		<graphicData>
-			<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.1,1.1</drawSize>
-		</graphicData>
-		<altitudeLayer>MoteOverhead</altitudeLayer>
-		<passability>Standable</passability>
-		<fillPercent>0.20</fillPercent>
-		<statBases>
-			<MaxHitPoints>10</MaxHitPoints>
-			<WorkToBuild>100</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Mass>2</Mass>
-		</statBases>
-		<size>(1, 1)</size>
-		<placeWorkers>
-			<li>RimEffectExtendedCut.PlaceWorker_OnWall</li>
-		</placeWorkers>
-		<costList>
-			<Steel>20</Steel>
-		</costList>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<building>
-			<isInert>true</isInert>
-			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
-			<allowWireConnection>false</allowWireConnection>
-		</building>
-		<designationCategory>Furniture</designationCategory>
-		<rotatable>true</rotatable>
-		<selectable>true</selectable>
-		<destroyable>true</destroyable>
-		<clearBuildingArea>false</clearBuildingArea>
-		<canOverlapZones>true</canOverlapZones>
-		<researchPrerequisites>
-			<li>ColoredLights</li>
-			<li>Electricity</li>
-		</researchPrerequisites>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>15</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable" />
-			<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
-				<colorOptions>
-					<li>
-						<glowRadius>8</glowRadius>
-						<glowColor>(152,167,250,0)</glowColor>
-						<colorLabel>blue</colorLabel>
-						<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
-					</li>
-					<li>
-						<glowRadius>8</glowRadius>
-						<glowColor>(244,182,115,0)</glowColor>
-						<colorLabel>orange</colorLabel>
-						<texPath>Things/Building/Furniture/PreFabWallLightOrange/PreFabWallLightOrange</texPath>
-					</li>
-				</colorOptions>
-			</li>
-		</comps>
-	</ThingDef>
-
+    <ThingDef ParentName="BuildingBase">
+        <defName>RE_PreFabWallLight</defName>
+        <label>prefab wall light</label>
+        <description>A wall light that lights an area in a red color.</description>
+        <thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.1,1.1</drawSize>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <passability>Standable</passability>
+        <fillPercent>0.20</fillPercent>
+        <statBases>
+            <MaxHitPoints>10</MaxHitPoints>
+            <WorkToBuild>100</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>2</Mass>
+        </statBases>
+        <size>(1, 1)</size>
+        <placeWorkers>
+            <li>RimEffectExtendedCut.PlaceWorker_OnWall</li>
+        </placeWorkers>
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <building>
+            <isInert>true</isInert>
+            <isEdifice>false</isEdifice>
+            <canPlaceOverWall>true</canPlaceOverWall>
+            <allowWireConnection>false</allowWireConnection>
+        </building>
+        <designationCategory>Furniture</designationCategory>
+        <rotatable>true</rotatable>
+        <selectable>true</selectable>
+        <destroyable>true</destroyable>
+        <clearBuildingArea>false</clearBuildingArea>
+        <canOverlapZones>true</canOverlapZones>
+        <researchPrerequisites>
+            <li>ColoredLights</li>
+            <li>Electricity</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>15</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
+                <colorOptions>
+                    <li>
+                        <glowRadius>8</glowRadius>
+                        <glowColor>(152,167,250,0)</glowColor>
+                        <colorLabel>blue</colorLabel>
+                        <texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
+                    </li>
+                    <li>
+                        <glowRadius>8</glowRadius>
+                        <glowColor>(244,182,115,0)</glowColor>
+                        <colorLabel>orange</colorLabel>
+                        <texPath>Things/Building/Furniture/PreFabWallLightOrange/PreFabWallLightOrange</texPath>
+                    </li>
+                </colorOptions>
+            </li>
+        </comps>
+    </ThingDef>
+	
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PrefabHoloTable</defName>
 		<label>prefab holo table</label>
@@ -132,6 +132,85 @@
 			</li>
 			<li Class="CompProperties_Flickable"/>
 		</comps>
+	</ThingDef>
+	
+	<!-- ================= Alliance Rug ================= -->
+	<ThingDef ParentName="FurnitureBase" Name="Re_AllianceRug1x2Base" Abstract="True">
+		<description>A mat consisting of woven straw around a wooden core. Makes for a beautiful, if highly flammable, floor covering.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Furniture/AllianceRug/AllianceRug</texPath>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<costList>
+			<Hay>20</Hay>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<designatorDropdown>RE_AllianceRug1x2</designatorDropdown>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<castEdgeShadows>false</castEdgeShadows>
+		<passability>Standable</passability>
+		<constructEffect>ConstructSteel</constructEffect>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<clearBuildingArea>false</clearBuildingArea>
+		<saveCompressible>false</saveCompressible>
+		<size>(1,2)</size>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1.0</Beauty>
+		</statBases>
+		<building>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fillPercent>0.10</fillPercent>
+		<techLevel>Spacer</techLevel>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="Re_AllianceRug1x2Base">
+		<defName>RE_AllianceRug1x2Red</defName>
+		<label>alliance rug red</label>
+		<color>(118,49,57)</color>
+	</ThingDef>
+
+	<ThingDef ParentName="Re_AllianceRug1x2Base">
+		<defName>RE_AllianceRug1x2Green</defName>
+		<label>alliance rug green</label>
+		<color>(89,105,62)</color>
+	</ThingDef>
+
+	<ThingDef ParentName="Re_AllianceRug1x2Base">
+		<defName>RE_AllianceRug1x2Blue</defName>
+		<label>alliance rug blue</label>
+		<color>(24,65,121)</color>
+	</ThingDef>
+
+	<ThingDef ParentName="Re_AllianceRug1x2Base">
+		<defName>RE_AllianceRug1x2Cream</defName>
+		<label>alliance rug cream</label>
+		<color>(195,192,176)</color>
+	</ThingDef>
+
+	<ThingDef ParentName="Re_AllianceRug1x2Base">
+		<defName>RE_AllianceRug1x2Dark</defName>
+		<label>alliance rug dark</label>
+		<color>(81,81,81)</color>
+	</ThingDef>
+
+	<ThingDef ParentName="Re_AllianceRug1x2Base">
+		<defName>RE_AllianceRug1x2Orange</defName>
+		<label>alliance rug orange</label>
+		<color>(242,191,129)</color>
 	</ThingDef>
 
 </Defs>
