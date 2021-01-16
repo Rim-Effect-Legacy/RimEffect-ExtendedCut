@@ -136,15 +136,13 @@
 	
 	<!-- ================= Alliance Rug ================= -->
 	<ThingDef ParentName="FurnitureBase" Name="Re_AllianceRug1x2Base" Abstract="True">
-		<description>A mat consisting of woven straw around a wooden core. Makes for a beautiful, if highly flammable, floor covering.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<texPath>Things/Building/Furniture/AllianceRug/AllianceRug</texPath>
+			<texPath>Things/Building/Furniture/AllianceRug/AllianceRug1x2</texPath>
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<costList>
-			<Hay>20</Hay>
-			<WoodLog>10</WoodLog>
+			<Cloth>12</Cloth>
 		</costList>
 		<designatorDropdown>RE_AllianceRug1x2</designatorDropdown>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
@@ -163,11 +161,6 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>1.0</Beauty>
 		</statBases>
-		<building>
-			<isEdifice>false</isEdifice>
-			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
-			<destroyShakeAmount>0</destroyShakeAmount>
-		</building>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<fillPercent>0.10</fillPercent>
 		<techLevel>Spacer</techLevel>
@@ -180,37 +173,55 @@
 	<ThingDef ParentName="Re_AllianceRug1x2Base">
 		<defName>RE_AllianceRug1x2Red</defName>
 		<label>alliance rug red</label>
-		<color>(118,49,57)</color>
+		<description>A carpet in a lovely red colour with the alliance symbole.</description>
+		<graphicData>
+			<color>(118,49,57)</color>
+		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="Re_AllianceRug1x2Base">
 		<defName>RE_AllianceRug1x2Green</defName>
 		<label>alliance rug green</label>
-		<color>(89,105,62)</color>
+		<description>A carpet in a lovely green colour with the alliance symbole.</description>
+		<graphicData>
+			<color>(89,105,62)</color>
+		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="Re_AllianceRug1x2Base">
 		<defName>RE_AllianceRug1x2Blue</defName>
 		<label>alliance rug blue</label>
-		<color>(24,65,121)</color>
+		<description>A carpet in a lovely blue colour with the alliance symbole.</description>
+		<graphicData>
+			<color>(24,65,121)</color>
+		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="Re_AllianceRug1x2Base">
 		<defName>RE_AllianceRug1x2Cream</defName>
 		<label>alliance rug cream</label>
-		<color>(195,192,176)</color>
+		<description>A carpet in a lovely cream colour with the alliance symbole.</description>
+		<graphicData>
+			<color>(195,192,176)</color>
+		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="Re_AllianceRug1x2Base">
 		<defName>RE_AllianceRug1x2Dark</defName>
 		<label>alliance rug dark</label>
-		<color>(81,81,81)</color>
+		<description>A carpet in a lovely dark colour with the alliance symbole.</description>
+		<graphicData>
+			<color>(81,81,81)</color>
+		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="Re_AllianceRug1x2Base">
 		<defName>RE_AllianceRug1x2Orange</defName>
 		<label>alliance rug orange</label>
-		<color>(242,191,129)</color>
+		<description>A carpet in a orange dark colour with the alliance symbole.</description>
+		<graphicData>
+			<color>(206,144,77)</color>
+		</graphicData>
 	</ThingDef>
 
 </Defs>

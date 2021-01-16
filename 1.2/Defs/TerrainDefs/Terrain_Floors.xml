@@ -10,7 +10,7 @@
             <Beauty>6</Beauty>
         </statBases>
         <designatorDropdown>RE_ColonialRecRoomStoneTile</designatorDropdown>
-        <constructEffect>ConstructStone</constructEffect>
+		<constructEffect>ConstructMetal</constructEffect>
         <researchPrerequisites>
             <li>RE_BasicPrefabrication</li>
             <li>Stonecutting</li>
