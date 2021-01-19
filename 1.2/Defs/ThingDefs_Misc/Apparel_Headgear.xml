@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>RE_Apparel_CapacitorHelmet</defName>
+        <label>capacitor helmet</label>
+        <description>An alliance helmet covering the entirety of the head, with a visor, often used by frontline alliance infantry.</description>
+        <techLevel>Ultra</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>RE_ManufacturingBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Apparel/CapacitorHelmet/CapacitorHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <tradeTags>
+            <li>RE_SpectreArmor</li>
+        </tradeTags>
+        <generateCommonality>2</generateCommonality>
+        <statBases>
+            <WorkToMake>24000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <costList>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/CapacitorHelmet/CapacitorHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <tags>
+                <li>RE_SpectreArmoury</li>
+            </tags>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+        <thingSetMakerTags>
+            <li>RE_SpectreArmoury</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_BiocodableApparel"/>
+        </comps>
+    </ThingDef>
+
+    <ThingDef>
+        <defName>RE_Apparel_ArchonVisor</defName>
+        <label>archon visor</label>
+        <description>A targeting computer that helps the user aim. It detects and analyzes targets using infrared, visible, and millimeter-wave electromagnetic sensors. An onboard targeting computer displays firing solutions on a retinal projection. It offers no protection at all.</description>
+        <graphicData>
+            <texPath>Things/Apparel/ArchonVisor/ArchonVisor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Ultra</techLevel>
+        <generateCommonality>2</generateCommonality>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <wornGraphicPath>Things/Apparel/ArchonVisor/ArchonVisor</wornGraphicPath>
+            <tags>
+                <li>RE_SpectreArmoury</li>
+            </tags>
+        </apparel>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Beauty>-3</Beauty>
+            <Mass>0.2</Mass>
+            <ArmorRating_Sharp>0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+            <Insulation_Cold>0</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+        </statBases>
+        <thingClass>Apparel</thingClass>
+        <category>Item</category>
+        <selectable>True</selectable>
+        <pathCost>14</pathCost>
+        <useHitPoints>True</useHitPoints>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>True</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <thingCategories>
+            <li>ArmorHeadgear</li>
+        </thingCategories>
+        <tradeTags>
+            <li>RE_SpectreArmor</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>RE_SpectreArmoury</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_BiocodableApparel"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
