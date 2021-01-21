@@ -96,7 +96,7 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>RE_Gun_IncisorSniperRifle</defName>
-        <label>Incisor sniper rifle</label>
+        <label>incisor sniper rifle</label>
         <description>A mass accelerator sniper rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Mantis is a powerful sniper rifle able to take out many targets in a single shot, though it struggles against shields and barriers.</description>
         <techLevel>Ultra</techLevel>
         <graphicData>
