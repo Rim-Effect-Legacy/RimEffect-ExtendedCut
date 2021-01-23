@@ -5,6 +5,7 @@
         <defName>RE_PreFabStove</defName>
         <label>prefab stove</label>
         <description>An electrically-powered stove with an attached countertop for preparing meals.</description>
+        <thingClass>Building_WorkTable_HeatPush</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/PreFabStove</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -67,13 +68,13 @@
                 <heatPerSecond>3</heatPerSecond>
             </li>
         </comps>
-        <building>
-            <isMealSource>true</isMealSource>
-            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-        </building>
-        <placeWorkers>
-            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-        </placeWorkers>
+    <building>
+      <isMealSource>true</isMealSource>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
         <researchPrerequisites>
             <li>RE_BasicPrefabrication</li>
         </researchPrerequisites>
