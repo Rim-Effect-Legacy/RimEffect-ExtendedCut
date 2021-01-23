@@ -42,9 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buildings\Building_WallLight.cs" />
+    <Compile Include="Comps\CompBattleTable.cs" />
     <Compile Include="Comps\CompPowerOutDoorLamp.cs" />
     <Compile Include="Comps\CompGlowerExtended.cs" />
+    <Compile Include="Defs\BattleSetDef.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
+    <Compile Include="Textures.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnWall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

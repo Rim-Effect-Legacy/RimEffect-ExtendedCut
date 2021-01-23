@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RimEffectExtendedCut.BattleSetDef>
+		<defName>RE_WarzoneBattleSet</defName>
+		<label>warzone</label>
+		<battleSetGraphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</battleSetGraphicData>
+		<battleSetTextures>
+			<startingTexture>
+				<ticksInterval>60~120</ticksInterval>
+				<texPath>UI/BattleSets/Set1/BattleStart</texPath>
+			</startingTexture>
+			<playingTextures>
+				<li>
+					<ticksInterval>60~120</ticksInterval>
+					<texPath>UI/BattleSets/Set1/BattleA</texPath>
+				</li>
+				<li>
+					<ticksInterval>60~120</ticksInterval>
+					<texPath>UI/BattleSets/Set1/BattleB</texPath>
+				</li>
+				<li>
+					<ticksInterval>60~120</ticksInterval>
+					<texPath>UI/BattleSets/Set1/BattleC</texPath>
+				</li>
+				<li>
+					<ticksInterval>60~120</ticksInterval>
+					<texPath>UI/BattleSets/Set1/BattleD</texPath>
+				</li>
+				<li>
+					<ticksInterval>60~120</ticksInterval>
+					<texPath>UI/BattleSets/Set1/BattleE</texPath>
+				</li>
+			</playingTextures>
+			<winningTextures>
+				<li>
+					<playerA>Win</playerA>
+					<playerB>Lose</playerB>
+					<texPath>UI/BattleSets/Set1/BattleWinA</texPath>
+				</li>
+				<li>
+					<playerA>Lose</playerA>
+					<playerB>Win</playerB>
+					<texPath>UI/BattleSets/Set1/BattleWinB</texPath>
+				</li>
+			</winningTextures>
+		</battleSetTextures>
+	</RimEffectExtendedCut.BattleSetDef>
+
+</Defs>

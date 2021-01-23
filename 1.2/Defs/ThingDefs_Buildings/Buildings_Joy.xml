@@ -35,6 +35,14 @@
             <JoyGainFactor>1.3</JoyGainFactor>
         </statBases>
         <size>(2,4)</size>
+		<comps>
+			<li Class="RimEffectExtendedCut.CompProperties_BattleTable">
+				<interactionCellOffsets>
+					<li>(2,0,0)</li>
+					<li>(0,0,1)</li>
+				</interactionCellOffsets>
+			</li>
+		</comps>
         <costStuffCount>80</costStuffCount>
         <costList>
             <Cloth>80</Cloth>
