@@ -10,12 +10,12 @@
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>50</MarketValue>
-            <WorkToMake>700</WorkToMake>
+            <MarketValue>22</MarketValue>
+            <WorkToMake>200</WorkToMake>
             <Nutrition>0.8</Nutrition>
         </statBases>
         <ingestible>
-            <preferability>MealFine</preferability>
+            <preferability>MealLavish</preferability>
             <tasteThought>AteLavishMeal</tasteThought>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
