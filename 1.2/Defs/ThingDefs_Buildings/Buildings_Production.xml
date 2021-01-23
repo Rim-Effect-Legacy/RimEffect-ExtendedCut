@@ -20,14 +20,14 @@
         <staticSunShadowHeight>0.20</staticSunShadowHeight>
         <constructEffect>ConstructMetal</constructEffect>
         <costList>
-            <Steel>80</Steel>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>40</Steel>
+            <RE_PrefabComponent>4</RE_PrefabComponent>
         </costList>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
         <statBases>
-            <WorkToBuild>2000</WorkToBuild>
+            <WorkToBuild>600</WorkToBuild>
             <MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
         </statBases>
@@ -38,7 +38,7 @@
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <recipes>
             <li>CookMealSimple</li>
             <li>CookMealFine</li>
@@ -58,7 +58,7 @@
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>250</basePowerConsumption>
+                <basePowerConsumption>200</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
@@ -76,7 +76,6 @@
         </placeWorkers>
         <researchPrerequisites>
             <li>RE_BasicPrefabrication</li>
-            <li>Electricity</li>
         </researchPrerequisites>
     </ThingDef>
 
