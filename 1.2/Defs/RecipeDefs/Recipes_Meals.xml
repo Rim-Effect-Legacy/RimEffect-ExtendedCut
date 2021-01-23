@@ -15,11 +15,10 @@
             <li>
                 <filter>
                     <categories>
-                        <li>MeatRaw</li>
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <count>0.25</count>
+                <count>0.15</count>
             </li>
             <li>
                 <filter>
@@ -27,15 +26,15 @@
                         <li>PlantFoodRaw</li>
                     </categories>
                 </filter>
-                <count>0.25</count>
+                <count>0.15</count>
             </li>
             <li>
                 <filter>
                     <categories>
-                        <li>PlantFoodRaw</li>
+                        <li>MeatRaw</li>
                     </categories>
                 </filter>
-                <count>0.5</count>
+                <count>0.15</count>
             </li>
         </ingredients>
         <products>
@@ -51,7 +50,7 @@
         <label>cook colonial meal x4</label>
         <description>Cook 4 extremely variety meal focusing on variety and over quantity. Used few ingredients, but a needs a wide variety.</description>
         <jobString>Cooking 4 colonial meal.</jobString>
-        <workAmount>3200</workAmount>
+        <workAmount>800</workAmount>
         <workSpeedStat>CookSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
@@ -65,7 +64,7 @@
                         <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <count>1.0</count>
+                <count>0.6</count>
             </li>
             <li>
                 <filter>
@@ -73,15 +72,15 @@
                         <li>PlantFoodRaw</li>
                     </categories>
                 </filter>
-                <count>1.0</count>
+                <count>0.6</count>
             </li>
             <li>
                 <filter>
                     <categories>
-                        <li>PlantFoodRaw</li>
+                        <li>AnimalProductRaw</li>
                     </categories>
                 </filter>
-                <count>2.0</count>
+                <count>0.6</count>
             </li>
         </ingredients>
         <products>
