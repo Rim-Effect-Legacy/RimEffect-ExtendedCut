@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--============================== Doors ==============================-->
-	<ThingDef ParentName="DoorBase">
+	<ThingDef ParentName="RE_DoorBase">
 		<defName>RE_PrefabDoorColonial</defName>
 		<label>prefab colonial autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
@@ -40,12 +40,12 @@
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
 		<stuffCategories Inherit='False'>
-		  <li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
-	
-	<ThingDef ParentName="DoorBase">
+
+	<ThingDef ParentName="RE_DoorBase">
 		<defName>RE_PrefabDoorRecreation</defName>
 		<label>prefab recreation autodoor</label>
 		<description>A thin steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
@@ -83,12 +83,12 @@
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
 		<stuffCategories Inherit='False'>
-		  <li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="DoorBase">
+	<ThingDef ParentName="RE_DoorBase">
 		<defName>RE_PrefabDoorIndustrial</defName>
 		<label>prefab industrial autodoor</label>
 		<description>A heavy steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
@@ -125,12 +125,12 @@
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
 		<stuffCategories Inherit='False'>
-		  <li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
-	
-	<ThingDef ParentName="DoorBase">
+
+	<ThingDef ParentName="RE_DoorBase">
 		<defName>RE_PrefabDoorHeavy</defName>
 		<label>prefab industrial autodoor</label>
 		<description>A big steel door that is used for outer walls. Powered operation allows people to move through the door without slowing down.</description>
@@ -170,7 +170,7 @@
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
 		<stuffCategories Inherit='False'>
-		  <li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
