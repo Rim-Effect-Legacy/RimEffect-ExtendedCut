@@ -1,112 +1,178 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--========================= PrefabDoors =============================-->
-	<ThingDef ParentName="BuildingBase" Name="RE_PreFabDoorBase" Abstract="True">
-		<graphicData>
-			<damageData>
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<thingClass>Building_Door</thingClass>
-		<category>Building</category>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
-		<fillPercent>1</fillPercent>
-		<useHitPoints>true</useHitPoints>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>160</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<selectable>true</selectable>
-		<tickerType>Normal</tickerType>
-		<rotatable>false</rotatable>
-		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Structure</designationCategory>
-		<holdsRoof>true</holdsRoof>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<drawerType>RealtimeOnly</drawerType>
-		<building>
-			<isInert>true</isInert>
-			<canPlaceOverWall>true</canPlaceOverWall>
-			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
-			<blueprintClass>Blueprint_Door</blueprintClass>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Door/Door_Blueprint</texPath>
-			</blueprintGraphicData>
-			<ai_chillDestination>false</ai_chillDestination>
-		</building>
-		<comps>
-			<li Class="CompProperties_Forbiddable"/>
-		</comps>
-		<placeWorkers>
-			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
-		</placeWorkers>
-	</ThingDef>
-
+	<!--============================== Doors ==============================-->
 	<ThingDef ParentName="DoorBase">
-		<defName>Door</defName>
-		<label>door</label>
-		<description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
-		<statBases>
-			<WorkToBuild>850</WorkToBuild>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/Door/DoorSimple_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData>
-				<!--  no damage marks because they don't move with the door
-			<rect>(0,0.12,1,0.76)</rect>-->
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Door/DoorSimple_MenuIcon</uiIconPath>
-		<costStuffCount>25</costStuffCount>
-		<designationHotKey>Misc1</designationHotKey>
-	</ThingDef>
-	<ThingDef ParentName="DoorBase">
-		<defName>Autodoor</defName>
-		<label>autodoor</label>
+		<defName>RE_PrefabDoorColonial</defName>
+		<label>prefab colonial autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-		<statBases>
-			<WorkToBuild>1100</WorkToBuild>
-		</statBases>
+		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Door/Autodoor_Mover</texPath>
+			<texPath>Things/Building/Door/PrefabDoorColonial_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
-				<!--  no damage marks because they don't move with the door
-			<rect>(0,0.12,1,0.76)</rect>-->
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+			<Beauty>2</Beauty>
+		</statBases>
+		<uiIconPath>Things/Building/Door/PrefabDoorColonial_MenuIcon</uiIconPath>
 		<costList>
-			<Steel>40</Steel>
+			<Steel>10</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>50</basePowerConsumption>
+				<basePowerConsumption>25</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<designationHotKey>Misc2</designationHotKey>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorColonial_Blueprint</texPath>
+			</blueprintGraphicData>
+		</building>
 		<researchPrerequisites>
-			<li>Autodoors</li>
+			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+		  <li>Metallic</li>
+		</stuffCategories>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoorBase">
+		<defName>RE_PrefabDoorRecreation</defName>
+		<label>prefab recreation autodoor</label>
+		<description>A thin steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Door/PrefabDoorRec_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>175</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<uiIconPath>Things/Building/Door/PrefabDoorRec_MenuIcon</uiIconPath>
+		<costList>
+			<Steel>5</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>10</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorRec_Blureprint</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>RE_PrefabDoorIndustrial</defName>
+		<label>prefab industrial autodoor</label>
+		<description>A heavy steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Door/PrefabDoorWorkshop_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
+		<uiIconPath>Things/Building/Door/PrefabDoorWorkshop_MenuIcon</uiIconPath>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorWorkshop_Blueprint</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<ThingDef ParentName="DoorBase">
+		<defName>RE_PrefabDoorHeavy</defName>
+		<label>prefab industrial autodoor</label>
+		<description>A big steel door that is used for outer walls. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Door/PrefabDoorHeavy_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>880</WorkToBuild>
+		</statBases>
+		<uiIconPath>Things/Building/Door/PrefabDoorHeavy_MenuIcon</uiIconPath>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
+		</costList>
+		<size>(2, 2)</size>
+		<costStuffCount>40</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorHeavy_Blueprint</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
 </Defs>
