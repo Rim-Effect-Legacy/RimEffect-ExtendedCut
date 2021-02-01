@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,20 @@ namespace RimEffectExtendedCut
 						 t.Destroy(DestroyMode.Refund);
                     }
 				}
+			}
+		}
+
+		[HarmonyPatch(typeof(WatchBuildingUtility), "GetWatchCellRect")]
+		private static class Patch_GetWatchCellRect
+		{
+			private static bool Prefix(ref CellRect __result, ThingDef def, IntVec3 center, Rot4 rot, int watchRot)
+			{
+				if (def == RE_DefOf.RE_HolovisionTable)
+				{
+					__result = GenAdj.OccupiedRect(center, rot, def.size).ExpandedBy(3);
+					return false;
+				}
+				return true;
 			}
 		}
 	}

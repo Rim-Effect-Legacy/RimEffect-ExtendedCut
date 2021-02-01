@@ -83,8 +83,6 @@
 		</costList>
 		<building>
 			<joyKind>RE_Holovision</joyKind>
-			<watchBuildingStandDistanceRange>3~4</watchBuildingStandDistanceRange>
-			<watchBuildingStandRectWidth>4</watchBuildingStandRectWidth>
 			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
 			<effectWatching>RE_WatchingHolovision</effectWatching>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
