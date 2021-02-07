@@ -102,7 +102,7 @@
   </ThingDef>
 
 	<!--============================== Outdoor Lamps ==============================-->
-	<ThingDef Abstract="True" Name="RE_OutdoorLampBase" ParentName="BuildingBase">
+	<ThingDef Abstract="True" Name="RE_PrefabOutdoorLampBase" ParentName="BuildingBase">
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -142,7 +142,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="RE_OutdoorLampBase" >
+	<ThingDef ParentName="RE_PrefabOutdoorLampBase" >
 		<defName>RE_PrefabOutdoorLamp</defName>
 		<label>prefab outdoor lamp</label>
 		<description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
