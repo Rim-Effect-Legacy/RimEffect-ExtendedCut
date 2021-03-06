@@ -28,7 +28,7 @@
 			<li>RimEffectExtendedCut.PlaceWorker_OnWall</li>
 		</placeWorkers>
 		<costList>
-			<Steel>20</Steel>
+			<Steel>10</Steel>
 		</costList>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<building>
@@ -152,7 +152,7 @@
 			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>20</Steel>
+			<Steel>25</Steel>
 		</costList>
 		<statBases>
 			<Mass>4</Mass>
