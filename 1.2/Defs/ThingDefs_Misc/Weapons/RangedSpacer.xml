@@ -22,7 +22,7 @@
             <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
         </statBases>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -121,7 +121,7 @@
         </statBases>
         <equippedAngleOffset>50</equippedAngleOffset>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
