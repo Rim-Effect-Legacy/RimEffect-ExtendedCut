@@ -30,6 +30,7 @@
 		<costList>
 			<Steel>10</Steel>
 		</costList>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<building>
 			<isInert>true</isInert>
@@ -45,6 +46,7 @@
 		<destroyable>true</destroyable>
 		<clearBuildingArea>false</clearBuildingArea>
 		<canOverlapZones>true</canOverlapZones>
+		<uiIconPath>Things/Building/Furniture/PreFabWallLight/UIPreFabWallLight</uiIconPath>
 		<researchPrerequisites>
 			<li>ColoredLights</li>
 			<li>Electricity</li>
