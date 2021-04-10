@@ -11,7 +11,7 @@
 			<texPath>Things/Item/Equipment/WeaponRanged/HalberdAssaultRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>RE_Interact_Avenger</soundInteract>
+		<soundInteract>RE_Interact_Halberd</soundInteract>
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
 			<Mass>4.8</Mass>
@@ -51,7 +51,7 @@
 				<defaultProjectile>RE_Bullet_HalberdAssaultRifle</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>27.9</range>
-				<soundCast>RE_Shot_Avenger</soundCast>
+				<soundCast>RE_Shot_Halberd</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -200,7 +200,7 @@
 				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
 			</li>
 		</comps>
-		<soundInteract>RE_Interact_Mantis</soundInteract>
+		<soundInteract>RE_Interact_Incisor</soundInteract>
 		<statBases>
 			<WorkToMake>50000</WorkToMake>
 			<Mass>5.2</Mass>
@@ -240,7 +240,7 @@
 				<range>42.9</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>RE_Shot_Mantis</soundCast>
+				<soundCast>RE_Shot_Incisor</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>

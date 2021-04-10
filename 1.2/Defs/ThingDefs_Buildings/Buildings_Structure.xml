@@ -130,49 +130,4 @@
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="RE_DoorBase">
-		<defName>RE_PrefabDoorHeavy</defName>
-		<label>prefab industrial autodoor</label>
-		<description>A big steel door that is used for outer walls. Powered operation allows people to move through the door without slowing down.</description>
-		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Door/PrefabDoorHeavy_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<statBases>
-			<WorkToBuild>880</WorkToBuild>
-		</statBases>
-		<uiIconPath>Things/Building/Door/PrefabDoorHeavy_MenuIcon</uiIconPath>
-		<costList>
-			<Steel>75</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<RE_PrefabComponent>2</RE_PrefabComponent>
-		</costList>
-		<size>(2, 2)</size>
-		<costStuffCount>40</costStuffCount>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>25</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Door/PrefabDoorHeavy_Blueprint</texPath>
-			</blueprintGraphicData>
-		</building>
-		<researchPrerequisites>
-			<li>RE_BasicPrefabrication</li>
-		</researchPrerequisites>
-		<stuffCategories Inherit='False'>
-			<li>Metallic</li>
-		</stuffCategories>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	</ThingDef>
-
 </Defs>

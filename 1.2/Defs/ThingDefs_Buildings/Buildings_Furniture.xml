@@ -49,8 +49,9 @@
 		<uiIconPath>Things/Building/Furniture/PreFabWallLight/UIPreFabWallLight</uiIconPath>
 		<researchPrerequisites>
 			<li>ColoredLights</li>
-			<li>Electricity</li>
+			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
+		<techLevel>Ultra</techLevel>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -92,7 +93,6 @@
 		<rotatable>false</rotatable>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
 		<useHitPoints>False</useHitPoints>
-		<designationCategory>Misc</designationCategory>
 		<passability>Standable</passability>
 		<building>
 			<sowTag>SupportPlantsOnly</sowTag>
@@ -142,6 +142,7 @@
 		<researchPrerequisites>
 			<li>Electricity</li>
 		</researchPrerequisites>
+		<techLevel>Ultra</techLevel>
 	</ThingDef>
 
 	<ThingDef ParentName="RE_PrefabOutdoorLampBase" >
@@ -175,13 +176,13 @@
 			<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
 				<colorOptions>
 					<li>
-						<glowRadius>7</glowRadius>
+						<glowRadius>6</glowRadius>
 						<glowColor>(152,167,250,0)</glowColor>
 						<colorLabel>blue</colorLabel>
 						<texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
 					</li>
 					<li>
-						<glowRadius>7</glowRadius>
+						<glowRadius>6</glowRadius>
 						<glowColor>(244,182,115,0)</glowColor>
 						<colorLabel>orange</colorLabel>
 						<texPath>Things/Building/Furniture/PreFabOutdoorLampOrange/PreFabOutdoorLampOrange</texPath>
