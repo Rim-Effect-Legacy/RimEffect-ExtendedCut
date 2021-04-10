@@ -158,7 +158,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/CapacitorHelmet/CapacitorHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/ArchonVisor/ArchonVisor</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>

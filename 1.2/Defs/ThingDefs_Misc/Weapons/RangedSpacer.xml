@@ -39,10 +39,9 @@
 		</thingSetMakerTags>
 		<tradeTags>
 			<li>RE_AllianceWeaponry</li>
-			<li>RE_AllianceGun</li>
 		</tradeTags>
 		<weaponTags Inherit='False'>
-			<li>AllianceGun</li>
+			<li>AndromedaGun</li>
 		</weaponTags>
 		<verbs>
 			<li>
