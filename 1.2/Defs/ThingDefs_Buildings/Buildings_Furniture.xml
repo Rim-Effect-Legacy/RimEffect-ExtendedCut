@@ -5,7 +5,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PreFabWallLight</defName>
 		<label>prefab wall light</label>
-		<description>A wall light that lights an area in a red color.</description>
+		<description>A wall light designed to be quickly and easily assembled in the process of setting up a new colony.</description>
 		<thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -74,32 +74,32 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BuildingBase">
-    <defName>RE_WallLightDummy</defName>
-    <label>dummy</label>
-    <description>dummy</description>
-    <graphicData>
-      <texPath>Things/Building/Misc/PartySpot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
-    <statBases>
-      <WorkToBuild>0</WorkToBuild>
-    </statBases>
-    <rotatable>false</rotatable>
-    <scatterableOnMapGen>false</scatterableOnMapGen>
-    <useHitPoints>False</useHitPoints>
-    <designationCategory>Misc</designationCategory>
-    <passability>Standable</passability>
-    <building>
-      <sowTag>SupportPlantsOnly</sowTag>
-      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-      <ai_chillDestination>false</ai_chillDestination>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-    </building>
-    <designationHotKey>Misc11</designationHotKey>
-  </ThingDef>
+		<defName>RE_WallLightDummy</defName>
+		<label>dummy</label>
+		<description>dummy</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/PartySpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+		</statBases>
+		<rotatable>false</rotatable>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<designationCategory>Misc</designationCategory>
+		<passability>Standable</passability>
+		<building>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<designationHotKey>Misc11</designationHotKey>
+	</ThingDef>
 
 	<!--============================== Outdoor Lamps ==============================-->
 	<ThingDef Abstract="True" Name="RE_PrefabOutdoorLampBase" ParentName="BuildingBase">
@@ -145,7 +145,7 @@
 	<ThingDef ParentName="RE_PrefabOutdoorLampBase" >
 		<defName>RE_PrefabOutdoorLamp</defName>
 		<label>prefab outdoor lamp</label>
-		<description>An electrical standing lamp that lights an area. People need light to move and work at full speed.</description>
+		<description>An self-powered electrical standing lamp for outdoor use designed to be quickly and easily assembled in the process of setting up a new colony.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>

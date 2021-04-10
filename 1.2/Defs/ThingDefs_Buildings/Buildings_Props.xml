@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="BuildingBase">
+<!--     <ThingDef ParentName="BuildingBase">
         <defName>RE_PropCratesmall</defName>
         <label>cargo crate</label>
         <description>A metal cargo crate. Impassable. Cannot hold roof.</description>
@@ -163,6 +163,6 @@
 		<building>
 				  <isInert>true</isInert>
 		</building>
-	  </ThingDef>
+	  </ThingDef> -->
 
 </Defs>

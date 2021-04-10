@@ -10,7 +10,7 @@
 	<modDependencies>
         <li>
             <packageId>RimEffect.Core</packageId>
-            <displayName>RimEffect: Core - Extended Cut</displayName>
+            <displayName>RimEffect: Core</displayName>
             <downloadUrl>https://github.com/AndroidQuazar/RimEffect-Core</downloadUrl>
         </li>
     </modDependencies>

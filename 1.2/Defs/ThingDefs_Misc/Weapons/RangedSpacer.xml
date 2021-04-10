@@ -1,183 +1,181 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- Alliance Assault Rifle -->
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>RE_Gun_HalberdAssaultRifle</defName>
-        <label>halberd assault rifle</label>
-        <description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Avenger is an automatic rifle, and standard issue for Alliance marines.</description>
-        <techLevel>Ultra</techLevel>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/HalberdAssaultRifle</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>RE_Interact_Avenger</soundInteract>
-        <statBases>
-            <WorkToMake>45000</WorkToMake>
-            <Mass>4.6</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.64</AccuracyShort>
-            <AccuracyMedium>0.55</AccuracyMedium>
-            <AccuracyLong>0.45</AccuracyLong>
-            <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
-        </statBases>
-        <recipeMaker>
-            <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>7</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="False">
-                <li>RE_ManufacturingBench</li>
-            </recipeUsers>
-        </recipeMaker>
-        <costList>
-            <Plasteel>55</Plasteel>
-            <ComponentSpacer>2</ComponentSpacer>
-        </costList>
-        <thingSetMakerTags>
-            <li>RE_AllianceWeaponry</li>
-        </thingSetMakerTags>
-        <tradeTags>
-            <li>RE_AllianceWeaponry</li>
-            <li>RE_AllianceGun</li>
-        </tradeTags>
-        <weaponTags Inherit='False'>
-            <li>AllianceGun</li>
-        </weaponTags>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>RE_Bullet_HalberdAssaultRifle</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
-                <range>27.9</range>
-                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
-                <soundCast>RE_Shot_Avenger</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RE_Gun_HalberdAssaultRifle</defName>
+		<label>halberd assault rifle</label>
+		<description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Avenger is an automatic rifle, and standard issue for Alliance marines.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HalberdAssaultRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>RE_Interact_Avenger</soundInteract>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RE_ManufacturingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>55</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags>
+			<li>RE_AllianceWeaponry</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>RE_AllianceWeaponry</li>
+			<li>RE_AllianceGun</li>
+		</tradeTags>
+		<weaponTags Inherit='False'>
+			<li>AllianceGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RE_Bullet_HalberdAssaultRifle</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>27.9</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>RE_Shot_Avenger</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
-    <ThingDef ParentName="BaseBullet">
-        <defName>RE_Bullet_HalberdAssaultRifle</defName>
-        <label>accelerated shot</label>
-        <graphicData>
-            <texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>18</damageAmountBase>
-            <armorPenetrationBase>0.35</armorPenetrationBase>
-            <speed>70</speed>
-        </projectile>
-    </ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_HalberdAssaultRifle</defName>
+		<label>accelerated shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
 
-    <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>RE_Gun_IncisorSniperRifle</defName>
-        <label>incisor sniper rifle</label>
-        <description>A mass accelerator sniper rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Mantis is a powerful sniper rifle able to take out many targets in a single shot, though it struggles against shields and barriers.</description>
-        <techLevel>Ultra</techLevel>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/IncisorSniperRifle</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.14</drawSize>
-        </graphicData>
-        <comps>
-            <li>
-                <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-            </li>
-        </comps>
-        <soundInteract>RE_Interact_Mantis</soundInteract>
-        <statBases>
-            <WorkToMake>50000</WorkToMake>
-            <Mass>5.2</Mass>
-            <AccuracyTouch>0.70</AccuracyTouch>
-            <AccuracyShort>0.73</AccuracyShort>
-            <AccuracyMedium>0.86</AccuracyMedium>
-            <AccuracyLong>0.88</AccuracyLong>
-            <RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
-        </statBases>
-        <equippedAngleOffset>50</equippedAngleOffset>
-        <recipeMaker>
-            <researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>10</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="False">
-                <li>RE_ManufacturingBench</li>
-            </recipeUsers>
-        </recipeMaker>
-        <costList>
-            <Plasteel>60</Plasteel>
-            <ComponentSpacer>3</ComponentSpacer>
-        </costList>
-        <weaponTags Inherit='False'>
-            <li>AllianceGunSniper</li>
-        </weaponTags>
-        <tradeTags>
-            <li>RE_AllianceWeaponry</li>
-            <li>RE_AllianceGunSniper</li>
-        </tradeTags>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>RE_Bullet_IncisorSniperRifle</defaultProjectile>
-                <warmupTime>2.2</warmupTime>
-                <range>42.9</range>
-                <burstShotCount>1</burstShotCount>
-                <soundCast>RE_Shot_Mantis</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
-        </verbs>
-        <thingSetMakerTags>
-            <li>RE_AllianceWeaponry</li>
-        </thingSetMakerTags>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>11</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-	
-	<!-- Alliance Sniper Rifle -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>RE_Gun_IncisorSniperRifle</defName>
+		<label>incisor sniper rifle</label>
+		<description>A mass accelerator sniper rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Mantis is a powerful sniper rifle able to take out many targets in a single shot, though it struggles against shields and barriers.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/IncisorSniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.14</drawSize>
+		</graphicData>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>RE_Interact_Mantis</soundInteract>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>5.2</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.73</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>50</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RE_ManufacturingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<weaponTags Inherit='False'>
+			<li>AllianceGunSniper</li>
+		</weaponTags>
+		<tradeTags>
+			<li>RE_AllianceWeaponry</li>
+			<li>RE_AllianceGunSniper</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RE_Bullet_IncisorSniperRifle</defaultProjectile>
+				<warmupTime>2.2</warmupTime>
+				<range>42.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>RE_Shot_Mantis</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RE_AllianceWeaponry</li>
+		</thingSetMakerTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>RE_Bullet_IncisorSniperRifle</defName>
 		<label>accelerated sniper shot</label>
