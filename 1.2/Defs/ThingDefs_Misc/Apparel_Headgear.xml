@@ -54,6 +54,9 @@
 				<li>RE_AllianceArmoury</li>
 			</tags>
 		</apparel>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
