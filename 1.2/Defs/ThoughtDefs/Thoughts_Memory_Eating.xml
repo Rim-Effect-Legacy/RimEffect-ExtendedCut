@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>RE_AteColonialMeal</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate colonial meal</label>
+				<description>That colonial meal was incredible. The variety of ingredients really lifts the spirit.</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>
