@@ -30,6 +30,9 @@
 		<pathCost>14</pathCost>
 		<useHitPoints>True</useHitPoints>
 		<techLevel>Ultra</techLevel>
+        <thingCategories>
+            <li>ArmorHeadgear</li>
+        </thingCategories>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
 		</equippedStatOffsets>
