@@ -22,7 +22,7 @@
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
+			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -112,7 +112,7 @@
 			<RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
+			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -211,7 +211,7 @@
 		</statBases>
 		<equippedAngleOffset>50</equippedAngleOffset>
 		<recipeMaker>
-			<researchPrerequisite>RE_MassEffectFieldManipulation</researchPrerequisite>
+			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
