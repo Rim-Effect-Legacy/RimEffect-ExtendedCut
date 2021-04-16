@@ -354,7 +354,6 @@
 	</ThingDef>
 
 	<!-- Chakram launcher -->
-
 	<ThingDef ParentName="BaseBullet">
 		<defName>RE_Bullet_ChakramLauncher</defName>
 		<label>incendiary bolt</label>
