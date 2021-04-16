@@ -1,56 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Accelerator Assault Rifle -->
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>RE_Gun_AcceleratorAssaultRifle</defName>
-		<label>accelerator assault rifle</label>
+	<!-- Spacer Assault Rifle -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_SpacerAssaultRifle</defName>
+		<label>accelerated shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>RE_Gun_SpacerAssaultRifle</defName>
+		<label>spacer assault rifle</label>
 		<description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Lancer is an automatic rifle, and standard issue for Alliance marines.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/AcceleratorAssaultRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/SpacerAssaultRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>RE_Interact_Avenger</soundInteract>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<Mass>4.6</Mass>
+			<Mass>3.2</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.44</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>RE_ManufacturingBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>60</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
 		<thingSetMakerTags>
 			<li>RE_AcceleratorWeaponry</li>
 		</thingSetMakerTags>
 		<tradeTags>
 			<li>RE_AllianceWeaponry</li>
 			<li>RE_AllianceGun</li>
-			<li>RE_AcceleratorWeaponry</li>
-			<li>RE_AcceleratorGun</li>
+			<li>RE_SpacerWeaponry</li>
+			<li>RE_SpacerGun</li>
 		</tradeTags>
 		<weaponTags Inherit='False'>
-			<li>AcceleratorGun</li>
+			<li>SpacerGun</li>
 		</weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>RE_Bullet_AcceleratorAssaultRifle</defaultProjectile>
+				<defaultProjectile>RE_Bullet_SpacerAssaultRifle</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
 				<range>23.9</range>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -81,8 +82,9 @@
 		</tools>
 	</ThingDef>
 
+	<!-- Spacer Battle Rifle -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_AcceleratorAssaultRifle</defName>
+		<defName>RE_Bullet_SpacerBattleRifle</defName>
 		<label>accelerated shot</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
@@ -90,25 +92,23 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>17</damageAmountBase>
-			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationBase>0.40</armorPenetrationBase>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
 
-	<!-- Accelerator Battle Rifle -->
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>RE_Gun_AcceleratorBattleRifle</defName>
-		<label>accelerator battle rifle</label>
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>RE_Gun_SpacerBattleRifle</defName>
+		<label>spacer battle rifle</label>
 		<description>A mass accelerator battle rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Halberd is a semi-automatic rifle, developed by the Andromeda Initiative.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/AcceleratorBattleRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/SpacerBattleRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>RE_Interact_Halberd</soundInteract>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
 			<Mass>4.8</Mass>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.64</AccuracyShort>
@@ -116,36 +116,23 @@
 			<AccuracyLong>0.55</AccuracyLong>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>7</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>RE_ManufacturingBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>60</Plasteel>
-			<ComponentSpacer>2</ComponentSpacer>
-		</costList>
 		<thingSetMakerTags>
-			<li>RE_AcceleratorWeaponry</li>
+			<li>RE_SpacerWeaponry</li>
 		</thingSetMakerTags>
 		<tradeTags>
 			<li>RE_AllianceWeaponry</li>
 			<li>RE_AllianceGun</li>
-			<li>RE_AcceleratorWeaponry</li>
-			<li>RE_AcceleratorGun</li>
+			<li>RE_SpacerWeaponry</li>
+			<li>RE_SpacerGun</li>
 		</tradeTags>
 		<weaponTags Inherit='False'>
-			<li>AcceleratorGun</li>
+			<li>SpacerGun</li>
 		</weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>RE_Bullet_AcceleratorBattleRifle</defaultProjectile>
+				<defaultProjectile>RE_Bullet_SpacerBattleRifle</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>27.9</range>
 				<soundCast>RE_Shot_Halberd</soundCast>
@@ -174,31 +161,32 @@
 		</tools>
 	</ThingDef>
 
+	<!-- Spacer marksman rifle -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_AcceleratorBattleRifle</defName>
-		<label>accelerated shot</label>
+		<defName>RE_Bullet_SpacerMarksmanRifle</defName>
+		<label>accelerated sniper shot</label>
 		<graphicData>
-			<texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+			<texPath>Things/Projectile/Shot_MassAccelerated_Sniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>22</damageAmountBase>
-			<armorPenetrationBase>0.40</armorPenetrationBase>
-			<speed>70</speed>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<stoppingPower>2.5</stoppingPower>
+			<speed>80</speed>
 		</projectile>
 	</ThingDef>
 
-	<!-- Accelerator DMR -->
-	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>RE_Gun_AcceleratorDMRRifle</defName>
-		<label>accelerator DMR</label>
-		<description>A mass accelerator DMR. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Incisor is a sniper rifle used by military and police forces, firing three shots with each pull of the trigger.</description>
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>RE_Gun_SpacerMarksmanRifle</defName>
+		<label>spacer marksman rifle</label>
+		<description>A mass accelerator marksman rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Incisor is a sniper rifle used by military and police forces, firing three shots with each pull of the trigger.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/AcceleratorDMR</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/SpacerMarksmanRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.14</drawSize>
+			<drawSize>1.12</drawSize>
 		</graphicData>
 		<comps>
 			<li>
@@ -207,7 +195,6 @@
 		</comps>
 		<soundInteract>RE_Interact_Incisor</soundInteract>
 		<statBases>
-			<WorkToMake>50000</WorkToMake>
 			<Mass>5.2</Mass>
 			<AccuracyTouch>0.68</AccuracyTouch>
 			<AccuracyShort>0.69</AccuracyShort>
@@ -216,36 +203,23 @@
 			<RangedWeapon_Cooldown>2.50</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>50</equippedAngleOffset>
-		<recipeMaker>
-			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>10</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>RE_ManufacturingBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<costList>
-			<Plasteel>55</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
-		</costList>
 		<thingSetMakerTags>
-			<li>RE_AcceleratorWeaponry</li>
+			<li>RE_SpacerWeaponry</li>
 		</thingSetMakerTags>
 		<tradeTags>
 			<li>RE_AllianceWeaponry</li>
 			<li>RE_AllianceGunSniper</li>
-			<li>RE_AcceleratorWeaponry</li>
-			<li>RE_AcceleratorGunSniper</li>
+			<li>RE_SpacerWeaponry</li>
+			<li>RE_SpacerGunSniper</li>
 		</tradeTags>
 		<weaponTags Inherit='False'>
-			<li>AcceleratorGun</li>
+			<li>SpacerGun</li>
 		</weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>RE_Bullet_AcceleratorDMRRifle</defaultProjectile>
+				<defaultProjectile>RE_Bullet_SpacerMarksmanRifle</defaultProjectile>
 				<warmupTime>1.8</warmupTime>
 				<range>42.9</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
@@ -279,8 +253,9 @@
 		</tools>
 	</ThingDef>
 
+	<!-- Alliance Precision Rifle -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_AcceleratorDMRRifle</defName>
+		<defName>RE_Bullet_PrecisionSniperRifle</defName>
 		<label>accelerated sniper shot</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shot_MassAccelerated_Sniper</texPath>
@@ -288,76 +263,82 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
-			<armorPenetrationBase>0.15</armorPenetrationBase>
-			<stoppingPower>2.5</stoppingPower>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<stoppingPower>1.2</stoppingPower>
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
 
-	<!-- Firerain Assault Rifle -->
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>RE_Gun_ExpermientalAssaultRifle</defName>
-		<label>expermiental assault rifle</label>
-		<description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Fire Rain is an expermiental rifle and its origin is unknown.</description>
+		<defName>RE_Gun_AlliancePrecisionRifle</defName>
+		<label>alliance precision rifle</label>
+		<description>A mass accelerator sniper rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Ballista is a medium-to-long range rifle issued to frontline snipers who have to stay mobile.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/ExpermientalAssaultRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/AlliancePrecisionRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
 		</graphicData>
-		<soundInteract>RE_Interact_Avenger</soundInteract>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>RE_Interact_Mantis</soundInteract>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<Mass>4.6</Mass>
-			<AccuracyTouch>0.50</AccuracyTouch>
-			<AccuracyShort>0.58</AccuracyShort>
-			<AccuracyMedium>0.48</AccuracyMedium>
-			<AccuracyLong>0.41</AccuracyLong>
-			<RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>3.2</Mass>
+			<AccuracyTouch>0.68</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.84</AccuracyMedium>
+			<AccuracyLong>0.82</AccuracyLong>
+			<RangedWeapon_Cooldown>1.90</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedAngleOffset>50</equippedAngleOffset>
 		<recipeMaker>
 			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>8</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
 				<li>RE_ManufacturingBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Plasteel>40</Plasteel>
-			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>55</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags>
-			<li>RE_RareWeaponry</li>
-		</thingSetMakerTags>
-		<tradeTags>
-			<li>RE_RareWeaponry</li>
-		</tradeTags>
 		<weaponTags Inherit='False'>
-			<li>ExpermientalGun</li>
+			<li>AllianceGunSniper</li>
 		</weaponTags>
+		<tradeTags>
+			<li>RE_AllianceWeaponry</li>
+			<li>RE_AllianceGunSniper</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>RE_Bullet_ExpermientalAssaultRifle</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
-				<range>29.9</range>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<burstShotCount>5</burstShotCount>
-				<soundCast>RE_Shot_Avenger</soundCast>
+				<defaultProjectile>RE_Bullet_AlliancePrecisionRifle</defaultProjectile>
+				<warmupTime>1.9</warmupTime>
+				<range>39.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>RE_Shot_Ballista</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<thingSetMakerTags>
+			<li>RE_AllianceWeaponry</li>
+		</thingSetMakerTags>
 		<tools>
 			<li>
 				<label>stock</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
+				<power>11</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
 			<li>
@@ -372,22 +353,31 @@
 		</tools>
 	</ThingDef>
 
+	<!-- Chakram launcher -->
+
 	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_ExpermientalAssaultRifle</defName>
-		<label>heated accelerated shot</label>
+		<defName>RE_Bullet_ChakramLauncher</defName>
+		<label>incendiary bolt</label>
 		<graphicData>
-			<texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+			<texPath>Things/Projectile/LauncherShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(254,189,58)</color>
 		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<damageDef>Burn</damageDef>
-			<damageAmountBase>14</damageAmountBase>
-			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>75</speed>
+			<speed>40</speed>
+			<damageDef>Flame</damageDef>
+			<explosionRadius>1.1</explosionRadius>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseGunWithQuality">
 		<defName>RE_Gun_ChakramLauncher</defName>
 		<label>chakram launcher</label>
 		<description>A wide-barreled incendiary bolt launcher. The bolts create small incendiary explosions on impact, starting fires.</description>
@@ -399,28 +389,18 @@
 		<generateCommonality>0.3</generateCommonality>
 		<equippedAngleOffset>50</equippedAngleOffset>
 		<statBases>
-			<WorkToMake>60000</WorkToMake>
 			<Mass>3.2</Mass>
 			<RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
 		</statBases>
-		<costList>
-			<Plasteel>75</Plasteel>
-			<ComponentSpacer>4</ComponentSpacer>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisite>RE_AllianceWeaponry</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-		</recipeMaker>
 		<thingSetMakerTags>
 			<li>RE_RareWeaponry</li>
 		</thingSetMakerTags>
 		<tradeTags>
 			<li>RE_RareWeaponry</li>
+			<li>RE_AllianceGunHeavy</li>
 		</tradeTags>
 		<weaponTags Inherit='False'>
-			<li>ExpermientalGun</li>
+			<li>ExpermientalAllianceGun</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -458,28 +438,6 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_ChakramLauncher</defName>
-		<label>incendiary bolt</label>
-		<graphicData>
-			<texPath>Things/Projectile/LauncherShot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(254,189,58)</color>
-		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<speed>40</speed>
-			<damageDef>Flame</damageDef>
-			<explosionRadius>1.1</explosionRadius>
-			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-			<ai_IsIncendiary>true</ai_IsIncendiary>
-			<arcHeightFactor>0.2</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-		</projectile>
 	</ThingDef>
 
 </Defs>
