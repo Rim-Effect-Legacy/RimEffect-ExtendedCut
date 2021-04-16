@@ -15,6 +15,12 @@
 				</nomatch>
 			</li>
 			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]</xpath>
+				<value>
+					<tickerType>Normal</tickerType>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]/comps</xpath>
 				<value>
 					<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
@@ -47,6 +53,12 @@
 				</nomatch>
 			</li>
 			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabBedsideTableLamp"]</xpath>
+				<value>
+					<tickerType>Normal</tickerType>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "RE_PrefabBedsideTableLamp"]/comps</xpath>
 				<value>
 					<li Class="RimEffectExtendedCut.CompProperties_GlowerExtended">
@@ -77,6 +89,12 @@
 						<comps />
 					</value>
 				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabStandingLamp"]</xpath>
+				<value>
+					<tickerType>Normal</tickerType>
+				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "RE_PrefabStandingLamp"]/comps</xpath>

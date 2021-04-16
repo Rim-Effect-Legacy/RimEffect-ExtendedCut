@@ -11,13 +11,24 @@ namespace RimEffectExtendedCut
 	{
 		public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
 		{
-			AcceptanceReport result = false;
-			var edifice = loc.GetEdifice(map);
-			if (loc.InBounds(map) && (edifice?.def.defName.ToLower().Contains("wall") ?? false))
+			var adjacementCell = loc + rot.FacingCell;
+			if (adjacementCell.InBounds(map))
+            {
+				var adjacementEdifice = adjacementCell.GetEdifice(map);
+				if (adjacementEdifice != null && ((adjacementEdifice?.def.defName.ToLower().Contains("wall") ?? false) || adjacementEdifice.def.IsSmoothed))
+                {
+					return false;
+                }
+            }
+			if (loc.InBounds(map))
 			{
-				result = true;
+				var edifice = loc.GetEdifice(map);
+				if (edifice != null && ((edifice?.def.defName.ToLower().Contains("wall") ?? false) || edifice.def.IsSmoothed))
+				{
+					return true;
+                }
 			}
-			return result;
+			return false;
 		}
 	}
 }

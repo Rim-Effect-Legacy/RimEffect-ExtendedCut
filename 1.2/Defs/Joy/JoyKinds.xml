@@ -6,4 +6,29 @@
 		<label>holovision watching</label>
 	</JoyKindDef>
 
+	<JobDef>
+		<defName>RE_WatchHolovision</defName>
+		<driverClass>JobDriver_WatchTelevision</driverClass>
+		<reportString>watching holovision.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>8</joyMaxParticipants>
+		<joyKind>RE_Holovision</joyKind>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JoyGiverDef>
+		<defName>RE_WatchHolovision</defName>
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>3.5</baseChance>
+		<canDoWhileInBed>true</canDoWhileInBed>
+		<desireSit>false</desireSit>
+		<thingDefs>
+			<li>RE_HolovisionTable</li>
+		</thingDefs>
+		<jobDef>RE_WatchHolovision</jobDef>
+		<joyKind>RE_Holovision</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+		</requiredCapacities>
+	</JoyGiverDef>
 </Defs>
