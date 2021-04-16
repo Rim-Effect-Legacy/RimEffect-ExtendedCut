@@ -47,6 +47,7 @@
     <Compile Include="Comps\CompGlowerExtended.cs" />
     <Compile Include="Defs\BattleSetDef.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
+    <Compile Include="Projectiles\Bullet_ChakramLauncher.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnWall.cs" />
