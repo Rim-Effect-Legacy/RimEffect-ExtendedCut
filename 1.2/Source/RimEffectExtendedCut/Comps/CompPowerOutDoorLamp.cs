@@ -88,19 +88,33 @@ namespace RimEffectExtendedCut
 			base.CompTick();
 			var gainedEnergy = DesiredPowerOutput;
 			AddEnergy(gainedEnergy * CompPower.WattsToWattDaysPerTick);
-			DrawPower(Mathf.Min(Props.selfCharging * CompPower.WattsToWattDaysPerTick, storedEnergy));
+			if (compGlowerExtended.compGlower != null)
+            {
+				DrawPower(Mathf.Min(Props.selfCharging * CompPower.WattsToWattDaysPerTick, storedEnergy));
+            }
 			if (compGlowerExtended != null)
             {
-				if (storedEnergy <= 0)
-				{
+				var localHour = GenLocalDate.HourOfDay(this.parent.Map);
+				if (localHour >= 6 && localHour <= 20)
+                {
 					if (compGlowerExtended.compGlower != null)
-                    {
+					{
 						compGlowerExtended.RemoveGlower();
 					}
 				}
-				else if (compGlowerExtended.compGlower == null)
+				else
                 {
-					compGlowerExtended.UpdateGlower(compGlowerExtended.currentColorInd);
+					if (storedEnergy <= 0)
+					{
+						if (compGlowerExtended.compGlower != null)
+						{
+							compGlowerExtended.RemoveGlower();
+						}
+					}
+					else if (compGlowerExtended.compGlower == null)
+					{
+						compGlowerExtended.UpdateGlower(compGlowerExtended.currentColorInd);
+					}
 				}
 			}
 

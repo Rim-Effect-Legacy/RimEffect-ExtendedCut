@@ -4,5 +4,6 @@
 	<RE.SwitchLightColor>Switch light color</RE.SwitchLightColor>
 	<RE.SwitchLightColorDesc>Change current light colour.</RE.SwitchLightColorDesc>
 	<RE.ChangeColorTo>RE.ChangeColorTo {0}</RE.ChangeColorTo>
+	<RE.ColorSwitchPowerOff>Power is off. Impossible to switch color.</RE.ColorSwitchPowerOff>
 
 </LanguageData>

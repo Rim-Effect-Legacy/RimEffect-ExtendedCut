@@ -25,7 +25,6 @@ namespace RimEffectExtendedCut
 		public override void PostDraw()
         {
             base.PostDraw();
-            Log.Message(this.parent + " - PostDraw");
         }
         public override void PostDrawExtraSelectionOverlays()
         {
@@ -40,7 +39,6 @@ namespace RimEffectExtendedCut
 		{
 			foreach (var interactionSpot in this.Props.interactionCellOffsets)
             {
-				Log.Message("Drawing: " + interactionSpot);
 				IntVec3 c = InteractionCellWhenAt(interactionSpot, center, placingRot);
 				Vector3 vector = c.ToVector3ShiftedWithAltitude(AltitudeLayer.MetaOverlays);
 				if (tDef.interactionCellGraphic == null && tDef.interactionCellIcon != null)
