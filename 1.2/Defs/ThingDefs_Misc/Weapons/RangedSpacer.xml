@@ -229,9 +229,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<thingSetMakerTags>
-			<li>RE_AllianceWeaponry</li>
-		</thingSetMakerTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -320,7 +317,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>RE_Bullet_AlliancePrecisionRifle</defaultProjectile>
+				<defaultProjectile>RE_Bullet_PrecisionSniperRifle</defaultProjectile>
 				<warmupTime>1.9</warmupTime>
 				<range>39.9</range>
 				<burstShotCount>1</burstShotCount>
