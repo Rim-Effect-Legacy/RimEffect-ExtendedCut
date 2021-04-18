@@ -89,5 +89,22 @@
 		</subSounds>
 	</SoundDef>
 
+	<SoundDef>
+		<defName>RE_Shot_Chakram</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Things/Chakram/Shot_Chakram</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>45.2941~45.2941</volumeRange>      
+				<pitchRange>1.091765~1</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 
 </Defs>

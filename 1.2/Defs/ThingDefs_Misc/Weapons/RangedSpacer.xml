@@ -229,9 +229,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<thingSetMakerTags>
-			<li>RE_AllianceWeaponry</li>
-		</thingSetMakerTags>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -255,7 +252,7 @@
 
 	<!-- Alliance Precision Rifle -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_PrecisionSniperRifle</defName>
+		<defName>RE_Bullet_AlliancePrecisionRifle</defName>
 		<label>accelerated sniper shot</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shot_MassAccelerated_Sniper</texPath>
@@ -278,7 +275,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/AlliancePrecisionRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.8</drawSize>
+			<drawSize>1.08</drawSize>
 		</graphicData>
 		<comps>
 			<li>
@@ -411,7 +408,7 @@
 				<range>23.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>RE_Shot_Chakram</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 				<targetParams>
