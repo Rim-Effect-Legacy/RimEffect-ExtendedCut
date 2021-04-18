@@ -184,7 +184,7 @@
 		<description>A mass accelerator marksman rifle. Firing a slug lightened by mass effect fields using precision electromagnetism, its projectile shatters on impact to increase the damage to the target.\n\nThe Incisor is a sniper rifle used by military and police forces, firing three shots with each pull of the trigger.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/SpacerMarksmanRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/AcceleratorDMR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.12</drawSize>
 		</graphicData>
@@ -317,7 +317,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>RE_Bullet_AlliancePrecisionRifle</defaultProjectile>
+				<defaultProjectile>RE_Bullet_PrecisionSniperRifle</defaultProjectile>
 				<warmupTime>1.9</warmupTime>
 				<range>39.9</range>
 				<burstShotCount>1</burstShotCount>
