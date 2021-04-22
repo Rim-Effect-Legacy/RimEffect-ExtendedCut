@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- 	<ThingDef ParentName="FurnitureWithQualityBase">
+	<ThingDef ParentName="FurnitureWithQualityBase">
 		<defName>RE_WarzoneTable</defName>
 		<label>warzone table</label>
 		<description>placeholder</description>
@@ -34,7 +34,7 @@
 			<Beauty>0</Beauty>
 			<JoyGainFactor>1.3</JoyGainFactor>
 		</statBases>
-		<size>(2,4)</size>
+		<size>(3,5)</size>
 		<comps>
 			<li Class="RimEffectExtendedCut.CompProperties_BattleTable">
 				<interactionCellOffsets>
@@ -56,7 +56,7 @@
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef> -->
+	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_HolovisionTable</defName>
