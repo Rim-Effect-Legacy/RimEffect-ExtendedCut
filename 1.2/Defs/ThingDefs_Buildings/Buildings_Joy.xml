@@ -5,6 +5,8 @@
 		<defName>RE_WarzoneTable</defName>
 		<label>warzone table</label>
 		<description>placeholder</description>
+		<thingClass>RimEffectExtendedCut.Building_WarzoneTable</thingClass>
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Joy/WarzoneTable/ActiveWarzoneTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -23,7 +25,7 @@
 		<fillPercent>0.40</fillPercent>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<building>
-			<joyKind>Gaming_Dexterity</joyKind>
+			<joyKind>Gaming_Cerebral</joyKind>
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
 		<statBases>
@@ -38,9 +40,14 @@
 		<comps>
 			<li Class="RimEffectExtendedCut.CompProperties_BattleTable">
 				<interactionCellOffsets>
-					<li>(2,0,0)</li>
-					<li>(0,0,1)</li>
+					<li>(0,0,3)</li>
+					<li>(0,0,-3)</li>
 				</interactionCellOffsets>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
 			</li>
 		</comps>
 		<costStuffCount>80</costStuffCount>

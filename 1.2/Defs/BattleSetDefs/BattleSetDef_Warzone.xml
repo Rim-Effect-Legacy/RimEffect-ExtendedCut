@@ -9,45 +9,45 @@
 			<drawSize>(2,4)</drawSize>
 		</battleSetGraphicData>
 		<battleSetTextures>
-			<startingTexture>
+			<li>
 				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleStart</texPath>
-			</startingTexture>
-			<playingTextures>
-				<li>
-					<ticksInterval>60~120</ticksInterval>
-					<texPath>UI/BattleSets/Set1/BattleA</texPath>
-				</li>
-				<li>
-					<ticksInterval>60~120</ticksInterval>
-					<texPath>UI/BattleSets/Set1/BattleB</texPath>
-				</li>
-				<li>
-					<ticksInterval>60~120</ticksInterval>
-					<texPath>UI/BattleSets/Set1/BattleC</texPath>
-				</li>
-				<li>
-					<ticksInterval>60~120</ticksInterval>
-					<texPath>UI/BattleSets/Set1/BattleD</texPath>
-				</li>
-				<li>
-					<ticksInterval>60~120</ticksInterval>
-					<texPath>UI/BattleSets/Set1/BattleE</texPath>
-				</li>
-			</playingTextures>
-			<winningTextures>
-				<li>
-					<playerA>Win</playerA>
-					<playerB>Lose</playerB>
-					<texPath>UI/BattleSets/Set1/BattleWinA</texPath>
-				</li>
-				<li>
-					<playerA>Lose</playerA>
-					<playerB>Win</playerB>
-					<texPath>UI/BattleSets/Set1/BattleWinB</texPath>
-				</li>
-			</winningTextures>
+				<texPath>UI/BattleSets/Set1/BattleStart_east</texPath>
+			</li>
+			<li>
+				<ticksInterval>60~120</ticksInterval>
+				<texPath>UI/BattleSets/Set1/BattleA_east</texPath>
+			</li>
+			<li>
+				<ticksInterval>60~120</ticksInterval>
+				<texPath>UI/BattleSets/Set1/BattleB_east</texPath>
+			</li>
+			<li>
+				<ticksInterval>60~120</ticksInterval>
+				<texPath>UI/BattleSets/Set1/BattleC_east</texPath>
+			</li>
+			<li>
+				<ticksInterval>60~120</ticksInterval>
+				<texPath>UI/BattleSets/Set1/BattleD_east</texPath>
+			</li>
+			<li>
+				<ticksInterval>60~120</ticksInterval>
+				<texPath>UI/BattleSets/Set1/BattleE_east</texPath>
+			</li>
 		</battleSetTextures>
+
+		<winningTextures>
+			<li>
+				<playerA>Win</playerA>
+				<playerB>Lose</playerB>
+				<texPath>UI/BattleSets/Set1/BattleWinA_east</texPath>
+			</li>
+			<li>
+				<playerA>Lose</playerA>
+				<playerB>Win</playerB>
+				<texPath>UI/BattleSets/Set1/BattleWinB_east</texPath>
+			</li>
+		</winningTextures>
+
 	</RimEffectExtendedCut.BattleSetDef>
 
 </Defs>

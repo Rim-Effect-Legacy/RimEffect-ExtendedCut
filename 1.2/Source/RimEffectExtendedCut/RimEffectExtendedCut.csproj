@@ -41,12 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buildings\Building_WarzoneTable.cs" />
     <Compile Include="Buildings\Building_WallLight.cs" />
     <Compile Include="Comps\CompBattleTable.cs" />
     <Compile Include="Comps\CompPowerOutDoorLamp.cs" />
     <Compile Include="Comps\CompGlowerExtended.cs" />
     <Compile Include="Defs\BattleSetDef.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
+    <Compile Include="Jobs\JobDriver_PlayWarzoneSecondPlayer.cs" />
+    <Compile Include="Jobs\JobDriver_PlayWarzone.cs" />
+    <Compile Include="Jobs\JoyGiver_PlayWarzone.cs" />
     <Compile Include="Projectiles\Bullet_ChakramLauncher.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Textures.cs" />

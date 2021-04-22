@@ -5,5 +5,8 @@
 	<RE.SwitchLightColorDesc>Change current light colour.</RE.SwitchLightColorDesc>
 	<RE.ChangeColorTo>RE.ChangeColorTo {0}</RE.ChangeColorTo>
 	<RE.ColorSwitchPowerOff>Power is off. Impossible to switch color.</RE.ColorSwitchPowerOff>
+	
+	<RE.SelectBattleSet>Select battleset: {0}</RE.SelectBattleSet>
+	<RE.SelectBattleSetDesc>PLACEHOLDER</RE.SelectBattleSetDesc>
 
 </LanguageData>

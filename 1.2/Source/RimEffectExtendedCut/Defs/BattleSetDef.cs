@@ -14,12 +14,6 @@ namespace RimEffectExtendedCut
 		Lose,
 		Draw
     }
-	public class BattleSet
-    {
-		public BattleSetStep startingTexture;
-		public List<BattleSetStep> playingTextures;
-		public List<BattleSetStep> winningTextures;
-	}
 	public class BattleSetStep
     {
 		public IntRange ticksInterval;
@@ -30,6 +24,6 @@ namespace RimEffectExtendedCut
 	public class BattleSetDef : Def
 	{
 		public GraphicData battleSetGraphicData;
-		public BattleSet battleSetTextures;
+		public List<BattleSetStep> battleSetTextures;
 	}
 }

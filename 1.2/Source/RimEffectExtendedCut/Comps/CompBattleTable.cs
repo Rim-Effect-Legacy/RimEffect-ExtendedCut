@@ -22,10 +22,6 @@ namespace RimEffectExtendedCut
 	public class CompBattleTable : ThingComp
 	{
 		public CompProperties_BattleTable Props => this.props as CompProperties_BattleTable;
-		public override void PostDraw()
-        {
-            base.PostDraw();
-        }
         public override void PostDrawExtraSelectionOverlays()
         {
             base.PostDrawExtraSelectionOverlays();
@@ -34,8 +30,7 @@ namespace RimEffectExtendedCut
 				DrawInteractionCell(this.parent.def, this.parent.Position, this.parent.Rotation);
             }
         }
-
-		public void DrawInteractionCell(ThingDef tDef, IntVec3 center, Rot4 placingRot)
+        public void DrawInteractionCell(ThingDef tDef, IntVec3 center, Rot4 placingRot)
 		{
 			foreach (var interactionSpot in this.Props.interactionCellOffsets)
             {
@@ -60,7 +55,6 @@ namespace RimEffectExtendedCut
 					Graphics.DrawMesh(MeshPool.plane10, vector, Quaternion.identity, Textures.InteractionCellMaterial, 0);
 				}
 			}
-
 		}
 
 		public IntVec3 InteractionCellWhenAt(IntVec3 interactionCellOffset, IntVec3 center, Rot4 rot)
