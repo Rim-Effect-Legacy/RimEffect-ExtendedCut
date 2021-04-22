@@ -28,7 +28,8 @@
 			<li>RimEffectExtendedCut.PlaceWorker_OnWall</li>
 		</placeWorkers>
 		<costList>
-			<Steel>10</Steel>
+			<RE_PrefabComponent>1</RE_PrefabComponent>
+			<Steel>6</Steel>
 		</costList>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -155,7 +156,8 @@
 			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>25</Steel>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
+			<Steel>5</Steel>
 		</costList>
 		<statBases>
 			<Mass>4</Mass>

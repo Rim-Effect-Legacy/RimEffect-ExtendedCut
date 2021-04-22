@@ -14,13 +14,9 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<statBases>
-			<WorkToBuild>350</WorkToBuild>
-			<Beauty>2</Beauty>
-		</statBases>
 		<uiIconPath>Things/Building/Door/PrefabDoorColonial_MenuIcon</uiIconPath>
 		<costList>
-			<Steel>10</Steel>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<costStuffCount>15</costStuffCount>
@@ -46,9 +42,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RE_DoorBase">
-		<defName>RE_PrefabDoorRecreation</defName>
-		<label>prefab recreation autodoor</label>
-		<description>A thin steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<defName>RE_PrefabAutoDoorRecreation</defName>
+		<label>prefab autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Door/PrefabDoorRec_Mover</texPath>
@@ -57,16 +53,12 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<statBases>
-			<WorkToBuild>175</WorkToBuild>
-			<Beauty>1</Beauty>
-		</statBases>
 		<uiIconPath>Things/Building/Door/PrefabDoorRec_MenuIcon</uiIconPath>
 		<costList>
-			<Steel>5</Steel>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<costStuffCount>10</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -89,8 +81,8 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RE_DoorBase">
-		<defName>RE_PrefabDoorIndustrial</defName>
-		<label>prefab industrial autodoor</label>
+		<defName>RE_PrefabAutoDoorIndustrial</defName>
+		<label>prefab autodoor</label>
 		<description>A heavy steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
 		<graphicData>
@@ -100,15 +92,12 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<statBases>
-			<WorkToBuild>350</WorkToBuild>
-		</statBases>
 		<uiIconPath>Things/Building/Door/PrefabDoorWorkshop_MenuIcon</uiIconPath>
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<RE_PrefabComponent>3</RE_PrefabComponent>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
