@@ -61,6 +61,20 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<comps>     
+			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+				<WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
+				<Overheats>true</Overheats>
+				<OverheatDestroys>false</OverheatDestroys>
+				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+				<OverheatBlastExtraDamage>4</OverheatBlastExtraDamage>
+				<OverheatBlastRadius>1.5</OverheatBlastRadius>
+				<OverheatChance>0.1</OverheatChance>
+				<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+				<OverheatMoteSize>1</OverheatMoteSize>
+			</li> 
+		</comps>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -140,6 +154,20 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<comps>     
+			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+				<WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
+				<Overheats>true</Overheats>
+				<OverheatDestroys>false</OverheatDestroys>
+				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+				<OverheatBlastExtraDamage>4</OverheatBlastExtraDamage>
+				<OverheatBlastRadius>1.5</OverheatBlastRadius>
+				<OverheatChance>0.1</OverheatChance>
+				<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+				<OverheatMoteSize>1</OverheatMoteSize>
+			</li> 
+		</comps>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -229,6 +257,20 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<comps>     
+			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+				<WarmUpReductionPerShot>1.5</WarmUpReductionPerShot>
+				<Overheats>true</Overheats>
+				<OverheatDestroys>false</OverheatDestroys>
+				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+				<OverheatBlastExtraDamage>8</OverheatBlastExtraDamage>
+				<OverheatBlastRadius>1.5</OverheatBlastRadius>
+				<OverheatChance>0.1</OverheatChance>
+				<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+				<OverheatMoteSize>1</OverheatMoteSize>
+			</li> 
+		</comps>
 		<tools>
 			<li>
 				<label>stock</label>

@@ -11,6 +11,10 @@
 			<texPath>Things/Building/Joy/WarzoneTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,6)</drawSize>
+			<shadowData>
+				<volume>(0,0,0)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
