@@ -42,7 +42,7 @@
 		<joyXpPerTick>0.002</joyXpPerTick>
 		<joyKind>Gaming_Cerebral</joyKind>
 	</JobDef>
-	
+
 	<JobDef>
 		<defName>RE_Play_WarzoneSecondPlayer</defName>
 		<driverClass>RimEffectExtendedCut.JobDriver_PlayWarzoneSecondPlayer</driverClass>
@@ -53,6 +53,7 @@
 		<joyXpPerTick>0.002</joyXpPerTick>
 		<joyKind>Gaming_Cerebral</joyKind>
 	</JobDef>
+
 	<JoyGiverDef>
 		<defName>RE_Play_Warzone</defName>
 		<giverClass>RimEffectExtendedCut.JoyGiver_PlayWarzone</giverClass>
@@ -66,4 +67,5 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</JoyGiverDef>
+
 </Defs>
