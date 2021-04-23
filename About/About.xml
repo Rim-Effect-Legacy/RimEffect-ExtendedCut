@@ -8,17 +8,16 @@
 	</supportedVersions>
 	<packageId>RimEffect.ExtendedCut</packageId>
 	<modDependencies>
-        <li>
-            <packageId>RimEffect.Core</packageId>
-            <displayName>RimEffect: Core</displayName>
-            <downloadUrl>https://github.com/AndroidQuazar/RimEffect-Core</downloadUrl>
-        </li>
-    </modDependencies>
+		<li>
+			<packageId>RimEffect.Core</packageId>
+			<displayName>RimEffect: Core</displayName>
+			<downloadUrl>https://github.com/AndroidQuazar/RimEffect-Core</downloadUrl>
+		</li>
+	</modDependencies>
 	<loadAfter>
 		<li>vanillaexpanded.achievements</li>
 		<li>RimEffect.Core</li>
-		<li>VanillaExpanded.VFEPropsandDecor</li>
 	</loadAfter>
-	<description></description>
+	<description/>
 
 </ModMetaData>
