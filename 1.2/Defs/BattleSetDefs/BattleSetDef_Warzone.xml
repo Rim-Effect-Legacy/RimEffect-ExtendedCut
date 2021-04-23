@@ -10,23 +10,23 @@
 		</battleSetGraphicData>
 		<battleSetTextures>
 			<li>
-				<ticksInterval>60~120</ticksInterval>
+				<ticksInterval>100~120</ticksInterval>
 				<texPath>UI/BattleSets/FirstContactWar/BattleStart_east</texPath>
 			</li>
 			<li>
-				<ticksInterval>60~120</ticksInterval>
+				<ticksInterval>100~120</ticksInterval>
 				<texPath>UI/BattleSets/FirstContactWar/BattleA_east</texPath>
 			</li>
 			<li>
-				<ticksInterval>60~120</ticksInterval>
+				<ticksInterval>100~120</ticksInterval>
 				<texPath>UI/BattleSets/FirstContactWar/BattleB_east</texPath>
 			</li>
 			<li>
-				<ticksInterval>60~120</ticksInterval>
+				<ticksInterval>100~120</ticksInterval>
 				<texPath>UI/BattleSets/FirstContactWar/BattleC_east</texPath>
 			</li>
 			<li>
-				<ticksInterval>60~120</ticksInterval>
+				<ticksInterval>100~120</ticksInterval>
 				<texPath>UI/BattleSets/FirstContactWar/BattleD_east</texPath>
 			</li>
 		</battleSetTextures>

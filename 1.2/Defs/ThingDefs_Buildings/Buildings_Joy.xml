@@ -47,7 +47,7 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>200</basePowerConsumption>
+				<basePowerConsumption>300</basePowerConsumption>
 			</li>
 		</comps>
 		<costList>
@@ -117,9 +117,6 @@
 		<researchPrerequisites>
 			<li>RE_ComplexPrefabrication</li>
 		</researchPrerequisites>
-		<tradeTags>
-			<li>RE_HolovisionTable</li>
-		</tradeTags>
 		<techLevel>Ultra</techLevel>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<comps>
@@ -130,7 +127,7 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>450</basePowerConsumption>
+				<basePowerConsumption>150</basePowerConsumption>
 			</li>
 		</comps>
 	</ThingDef>
