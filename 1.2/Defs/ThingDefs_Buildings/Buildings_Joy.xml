@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="FurnitureWithQualityBase">
-		<defName>RE_WarzoneTable</defName>
-		<label>warzone table</label>
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_BattleTable</defName>
+		<label>prefab warzone table</label>
 		<description>placeholder</description>
 		<thingClass>RimEffectExtendedCut.Building_WarzoneTable</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Building/Joy/WarzoneTable/ActiveWarzoneTable</texPath>
+			<texPath>Things/Building/Joy/WarzoneTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,6)</drawSize>
 			<damageData>
@@ -50,19 +50,18 @@
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>
 		</comps>
-		<costStuffCount>80</costStuffCount>
 		<costList>
-			<Cloth>80</Cloth>
-			<WoodLog>30</WoodLog>
+			<Plasteel>150</Plasteel>
+			<RE_PrefabComponent>12</RE_PrefabComponent>
 		</costList>
 		<pathCost>42</pathCost>
 		<passability>PassThroughOnly</passability>
 		<designationCategory>Joy</designationCategory>
 		<canOverlapZones>false</canOverlapZones>
 		<researchPrerequisites>
-			<li>ComplexFurniture</li>
+			<li>RE_ComplexPrefabrication</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">

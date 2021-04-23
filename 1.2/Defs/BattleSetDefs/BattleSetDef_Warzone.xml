@@ -2,8 +2,8 @@
 <Defs>
 
 	<RimEffectExtendedCut.BattleSetDef>
-		<defName>RE_WarzoneBattleSet</defName>
-		<label>warzone</label>
+		<defName>RE_FirstContactWarBattleSet</defName>
+		<label>first contact war</label>
 		<battleSetGraphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,4)</drawSize>
@@ -11,43 +11,37 @@
 		<battleSetTextures>
 			<li>
 				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleStart_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleStart_east</texPath>
 			</li>
 			<li>
 				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleA_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleA_east</texPath>
 			</li>
 			<li>
 				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleB_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleB_east</texPath>
 			</li>
 			<li>
 				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleC_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleC_east</texPath>
 			</li>
 			<li>
 				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleD_east</texPath>
-			</li>
-			<li>
-				<ticksInterval>60~120</ticksInterval>
-				<texPath>UI/BattleSets/Set1/BattleE_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleD_east</texPath>
 			</li>
 		</battleSetTextures>
-
 		<winningTextures>
 			<li>
 				<playerA>Win</playerA>
 				<playerB>Lose</playerB>
-				<texPath>UI/BattleSets/Set1/BattleWinA_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleWinA_east</texPath>
 			</li>
 			<li>
 				<playerA>Lose</playerA>
 				<playerB>Win</playerB>
-				<texPath>UI/BattleSets/Set1/BattleWinB_east</texPath>
+				<texPath>UI/BattleSets/FirstContactWar/BattleWinB_east</texPath>
 			</li>
 		</winningTextures>
-
 	</RimEffectExtendedCut.BattleSetDef>
 
 </Defs>
