@@ -37,16 +37,24 @@ namespace RimEffectExtendedCut
                 {
 					table.StartPlay(this.pawn);
 				}
-				else if (table.LastTurn)
+				else if (table.InUse)
                 {
-					var winner = Rand.Bool ? pawn : this.TargetB.Pawn;
-					table.SelectWinner(winner);
-                }
-				else if (table.IsGameFinished)
-				{
-					table.StopPlay();
-					ReadyForNextToil();
+					if (table.LastTurn)
+					{
+						var winner = Rand.Bool ? pawn : this.TargetB.Pawn;
+						table.SelectWinner(winner);
+					}
+					else if (table.IsGameFinished)
+					{
+						if (this.TargetB.Pawn.jobs.curDriver is JobDriver_PlayWarzoneSecondPlayer driver)
+                        {
+							driver.endGame = true;
+                        }
+						table.StopPlay();
+						ReadyForNextToil();
+					}
 				}
+
 			};
 			doPlay.defaultCompleteMode = ToilCompleteMode.Never;
 			doPlay.activeSkill = (() => SkillDefOf.Intellectual);

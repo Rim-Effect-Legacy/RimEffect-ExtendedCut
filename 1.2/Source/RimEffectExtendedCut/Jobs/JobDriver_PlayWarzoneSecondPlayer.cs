@@ -12,6 +12,7 @@ namespace RimEffectExtendedCut
 {
     public class JobDriver_PlayWarzoneSecondPlayer : JobDriver
     {
+        public bool endGame;
         private Building_WarzoneTable Building_Warzone => this.TargetA.Thing as Building_WarzoneTable;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
@@ -26,7 +27,7 @@ namespace RimEffectExtendedCut
                 JoyUtility.JoyTickCheckEnd(pawn, JoyTickFullJoyAction.None);
                 pawn.skills.Learn(SkillDefOf.Intellectual, 0.02f);
                 pawn.GainComfortFromCellIfPossible();
-                if (Building_Warzone.IsGameFinished)
+                if (endGame || this.TargetB.Pawn.CurJobDef != RE_DefOf.RE_Play_Warzone)
                 {
                     ReadyForNextToil();
                 }

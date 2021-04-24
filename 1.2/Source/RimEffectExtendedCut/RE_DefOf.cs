@@ -14,6 +14,7 @@ namespace RimEffectExtendedCut
 	{
 		public static ThingDef RE_HolovisionTable;
 		public static BattleSetDef RE_FirstContactWarBattleSet;
+		public static JobDef RE_Play_Warzone;
 		public static JobDef RE_Play_WarzoneSecondPlayer;
 	}
 }

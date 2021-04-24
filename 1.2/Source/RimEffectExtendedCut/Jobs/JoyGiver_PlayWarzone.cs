@@ -15,19 +15,14 @@ namespace RimEffectExtendedCut
 		protected override bool CanDoDuringGathering => true;
 		protected override Job TryGivePlayJob(Pawn pawn, Thing t)
 		{
-			Log.Message(pawn + " is searching for warzone");
 			var warzoneTable = t as Building_WarzoneTable;
 			if (warzoneTable is null || !warzoneTable.CanUse || warzoneTable.InUse || !pawn.CanReserveAndReach(t, PathEndMode.ClosestTouch, Danger.Deadly))
 			{
-				Log.Message(pawn + " can't get " + def.jobDef);
-				Log.Message($"{t is Building_WarzoneTable} || {warzoneTable.CanUse} || {warzoneTable.InUse} || {pawn.CanReserveAndReach(t, PathEndMode.ClosestTouch, Danger.Deadly)}");
 				return null;
 			}
 			var companion = FindCompanion(pawn);
 			if (companion != null)
             {
-				Find.TickManager.CurTimeSpeed = TimeSpeed.Paused;
-				Log.Message(pawn + " got " + def.jobDef + " with " + companion);
 				return JobMaker.MakeJob(def.jobDef, warzoneTable, companion);
 			}
 			return null;
@@ -46,12 +41,12 @@ namespace RimEffectExtendedCut
 
 		protected bool MemberValidator(Pawn pawn)
 		{
-			var value = !pawn.health.hediffSet.hediffs.Any(y => y is Hediff_Alcohol x && x.Severity > 0.1f) && !workTags.Contains(pawn.mindState.lastJobTag);
+			var value = !workTags.Contains(pawn.mindState.lastJobTag);
 			return value;
 		}
 		protected bool PawnsCanGatherTogether(Pawn organizer, Pawn companion)
 		{
-			return companion.relations.OpinionOf(organizer) >= 20 && organizer.relations.OpinionOf(companion) >= 20;
+			return companion.relations.OpinionOf(organizer) >= 0 && organizer.relations.OpinionOf(companion) >= 0;
 		}
 		protected float SortCandidatesBy(Pawn organizer, Pawn candidate)
 		{

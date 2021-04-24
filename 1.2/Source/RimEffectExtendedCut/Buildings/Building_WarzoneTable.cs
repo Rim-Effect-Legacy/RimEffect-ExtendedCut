@@ -79,7 +79,6 @@ namespace RimEffectExtendedCut
             }
             var offfset = compBattleTable.Props.interactionCellOffsets[0];
             IntVec3 b = offfset.RotatedBy(this.Rotation);
-            Log.Message("GetFirstSpot: " + (this.Position + b));
             return this.Position + b;
         }
 
@@ -91,7 +90,6 @@ namespace RimEffectExtendedCut
             }
             var offset = compBattleTable.Props.interactionCellOffsets[1];
             IntVec3 b = offset.RotatedBy(this.Rotation);
-            Log.Message("GetSecondSpot: " + (this.Position + b));
             return this.Position + b;
         }
         public void StartPlay(Pawn user)
@@ -101,6 +99,9 @@ namespace RimEffectExtendedCut
             curGameStageInd = 0;
             nextTurnTick = Find.TickManager.TicksGame + curBattleSetDef.battleSetTextures[curGameStageInd].ticksInterval.RandomInRange;
             winnerIsDetermined = false;
+            winningBattleSet = null;
+            battleMat = null;
+            dirty = true;
         }
         public void StopPlay()
         {
@@ -129,15 +130,22 @@ namespace RimEffectExtendedCut
             {
                 if (!winnerIsDetermined && (battleMat is null || dirty))
                 {
-                    battleMat = curBattleSetDef.battleSetTextures[curGameStageInd].graphicData.Graphic.MatAt(Rotation);
+                    var curStage = curBattleSetDef.battleSetTextures[curGameStageInd];
+                    battleMat = curStage.graphicData.Graphic.MatAt(Rotation);
                     dirty = false;
-                    curBattleSetDef.battleSetTextures[curGameStageInd].soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(base.Position, base.Map)));
+                    if (curStage.soundDef != null)
+                    {
+                        curStage.soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(base.Position, base.Map)));
+                    }
                 }
-                else if (winnerIsDetermined && dirty)
+                else if (winningBattleSet != null && winnerIsDetermined && dirty)
                 {
                     battleMat = winningBattleSet.graphicData.Graphic.MatAt(Rotation);
                     dirty = false;
-                    winningBattleSet.soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(base.Position, base.Map)));
+                    if (winningBattleSet.soundDef != null)
+                    {
+                        winningBattleSet.soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(base.Position, base.Map)));
+                    }
                 }
                 return battleMat;
             }
