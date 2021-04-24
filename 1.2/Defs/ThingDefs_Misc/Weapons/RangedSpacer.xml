@@ -20,7 +20,7 @@
 	<ThingDef ParentName="BaseGunWithQuality">
 		<defName>RE_Gun_SpacerAssaultRifle</defName>
 		<label>spacer assault rifle</label>
-		<description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Lancer is an automatic rifle, and standard issue for Alliance marines.</description>
+		<description>A mass accelerator assault rifle. Firing slugs lightened by mass effect fields using precision electromagnetism, its projectiles shatter on impact to increase the damage to the target.\n\nThe Lancer is an automatic rifle, and standard was issue for Alliance marines after the First Contact War.</description>
 		<techLevel>Ultra</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SpacerAssaultRifle</texPath>
@@ -61,20 +61,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<comps>     
-			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
-				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
-				<WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
-				<Overheats>true</Overheats>
-				<OverheatDestroys>false</OverheatDestroys>
-				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
-				<OverheatBlastExtraDamage>4</OverheatBlastExtraDamage>
-				<OverheatBlastRadius>1.5</OverheatBlastRadius>
-				<OverheatChance>0.1</OverheatChance>
-				<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
-				<OverheatMoteSize>1</OverheatMoteSize>
-			</li> 
-		</comps>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -154,20 +140,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<comps>     
-			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
-				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
-				<WarmUpReductionPerShot>0.25</WarmUpReductionPerShot>
-				<Overheats>true</Overheats>
-				<OverheatDestroys>false</OverheatDestroys>
-				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
-				<OverheatBlastExtraDamage>4</OverheatBlastExtraDamage>
-				<OverheatBlastRadius>1.5</OverheatBlastRadius>
-				<OverheatChance>0.1</OverheatChance>
-				<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
-				<OverheatMoteSize>1</OverheatMoteSize>
-			</li> 
-		</comps>
 		<tools>
 			<li>
 				<label>stock</label>
@@ -257,20 +229,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<comps>     
-			<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
-				<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
-				<WarmUpReductionPerShot>1.5</WarmUpReductionPerShot>
-				<Overheats>true</Overheats>
-				<OverheatDestroys>false</OverheatDestroys>
-				<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
-				<OverheatBlastExtraDamage>8</OverheatBlastExtraDamage>
-				<OverheatBlastRadius>1.5</OverheatBlastRadius>
-				<OverheatChance>0.1</OverheatChance>
-				<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
-				<OverheatMoteSize>1</OverheatMoteSize>
-			</li> 
-		</comps>
 		<tools>
 			<li>
 				<label>stock</label>

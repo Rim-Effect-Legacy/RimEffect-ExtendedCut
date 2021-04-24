@@ -9,13 +9,28 @@
 	<packageId>RimEffect.ExtendedCut</packageId>
 	<modDependencies>
 		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+        <li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+		</li>
+		<li>
 			<packageId>RimEffect.Core</packageId>
 			<displayName>RimEffect: Core</displayName>
 			<downloadUrl>https://github.com/AndroidQuazar/RimEffect-Core</downloadUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>vanillaexpanded.achievements</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>erdelf.HumanoidAlienRaces</li>
 		<li>RimEffect.Core</li>
 	</loadAfter>
 	<description/>
