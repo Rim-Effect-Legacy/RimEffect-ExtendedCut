@@ -14,16 +14,23 @@ namespace RimEffectExtendedCut
 		Lose,
 		Draw
     }
-	public class BattleSetStep
+	public class BattleSetStep : IExposable
     {
 		public IntRange ticksInterval;
-		public string texPath;
 		public BattleCondition playerA;
 		public BattleCondition playerB;
+		public GraphicData graphicData;
+		public SoundDef soundDef;
+		public void ExposeData()
+        {
+			Scribe_Values.Look(ref ticksInterval, "ticksInterval");
+			Scribe_Values.Look(ref playerA, "playerA");
+			Scribe_Values.Look(ref playerB, "playerB");
+		}
 	}
 	public class BattleSetDef : Def
 	{
-		public GraphicData battleSetGraphicData;
 		public List<BattleSetStep> battleSetTextures;
+		public List<BattleSetStep> winningTextures;
 	}
 }

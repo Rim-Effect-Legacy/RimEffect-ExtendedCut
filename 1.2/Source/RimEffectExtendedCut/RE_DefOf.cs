@@ -13,7 +13,7 @@ namespace RimEffectExtendedCut
 	public static class RE_DefOf
 	{
 		public static ThingDef RE_HolovisionTable;
-		public static BattleSetDef RE_WarzoneBattleSet;
+		public static BattleSetDef RE_FirstContactWarBattleSet;
 		public static JobDef RE_Play_WarzoneSecondPlayer;
 	}
 }

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace RimEffectExtendedCut
 {
@@ -16,6 +17,34 @@ namespace RimEffectExtendedCut
         public bool CanUse => user == null && powerComp.PowerOn;
 
         private bool inUse;
+
+        private int curGameTick;
+
+        public BattleSetDef curBattleSetDef;
+
+        private int curGameStageInd;
+
+        private Material battleMat;
+
+        private bool dirty;
+
+        private int nextTurnTick;
+
+        private BattleSetStep winningBattleSet;
+
+        private bool winnerIsDetermined;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Defs.Look(ref curBattleSetDef, "curBattleSetDef");
+            Scribe_Values.Look(ref curGameTick, "curGameTick");
+            Scribe_Values.Look(ref curGameStageInd, "curGameStageInd");
+            Scribe_Values.Look(ref nextTurnTick, "nextTurnTick");
+            Scribe_Values.Look(ref winnerIsDetermined, "winnerIsDetermined");
+            Scribe_Deep.Look(ref winningBattleSet, "winningBattleSet");
+        }
+
         public bool InUse
         {
             get
@@ -36,9 +65,9 @@ namespace RimEffectExtendedCut
             base.SpawnSetup(map, respawningAfterLoad);
             powerComp = GetComp<CompPowerTrader>();
             compBattleTable = GetComp<CompBattleTable>();
-            if (curBattleSet is null)
+            if (curBattleSetDef is null)
             {
-                curBattleSet = RE_DefOf.RE_WarzoneBattleSet;
+                curBattleSetDef = RE_DefOf.RE_FirstContactWarBattleSet;
             }
         }
 
@@ -69,33 +98,46 @@ namespace RimEffectExtendedCut
         {
             this.user = user;
             this.inUse = true;
-            nextTurnTick = Find.TickManager.TicksGame + curBattleSet.battleSetTextures[curGameStageInd].ticksInterval.RandomInRange;
+            curGameStageInd = 0;
+            nextTurnTick = Find.TickManager.TicksGame + curBattleSetDef.battleSetTextures[curGameStageInd].ticksInterval.RandomInRange;
+            winnerIsDetermined = false;
         }
         public void StopPlay()
         {
             this.user = null;
             this.inUse = false;
+            curGameStageInd = 0;
         }
 
-        private int curGameTick;
-
-        public BattleSetDef curBattleSet;
-
-        private int curGameStageInd;
-
-        private Material battleMat;
-
-        private bool dirty;
-
-        private int nextTurnTick;
+        public void SelectWinner(Pawn pawn)
+        {
+            if (pawn == user)
+            {
+                winningBattleSet = this.curBattleSetDef.winningTextures.FirstOrDefault(x => x.playerA == BattleCondition.Win);
+            }
+            else
+            {
+                winningBattleSet = this.curBattleSetDef.winningTextures.FirstOrDefault(x => x.playerB == BattleCondition.Win);
+            }
+            nextTurnTick = Find.TickManager.TicksGame + winningBattleSet.ticksInterval.RandomInRange;
+            dirty = true;
+            winnerIsDetermined = true;
+        }
         public Material BattleMaterial
         {
             get
             {
-                if (battleMat is null || dirty)
+                if (!winnerIsDetermined && (battleMat is null || dirty))
                 {
-                    battleMat = MaterialPool.MatFrom(curBattleSet.battleSetTextures[curGameStageInd].texPath);
+                    battleMat = curBattleSetDef.battleSetTextures[curGameStageInd].graphicData.Graphic.MatAt(Rotation);
                     dirty = false;
+                    curBattleSetDef.battleSetTextures[curGameStageInd].soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(base.Position, base.Map)));
+                }
+                else if (winnerIsDetermined && dirty)
+                {
+                    battleMat = winningBattleSet.graphicData.Graphic.MatAt(Rotation);
+                    dirty = false;
+                    winningBattleSet.soundDef.PlayOneShot(SoundInfo.InMap(new TargetInfo(base.Position, base.Map)));
                 }
                 return battleMat;
             }
@@ -108,41 +150,28 @@ namespace RimEffectExtendedCut
                 var drawPos = this.DrawPos;
                 drawPos.y++;
 
-                Vector3 s = new Vector3(this.def.graphicData.drawSize.x, 1f, this.def.graphicData.drawSize.y);
+                Vector3 s = this.Rotation.IsHorizontal ? new Vector3(this.def.graphicData.drawSize.y, 1f, this.def.graphicData.drawSize.x) 
+                        : new Vector3(this.def.graphicData.drawSize.x, 1f, this.def.graphicData.drawSize.y);
                 Matrix4x4 matrix = default(Matrix4x4);
-                matrix.SetTRS(drawPos, this.Rotation.AsQuat, s);
-                Log.Message("Drawing " + BattleMaterial);
+                matrix.SetTRS(drawPos, Quaternion.identity, s);
                 Graphics.DrawMesh(MeshPool.plane10, matrix, BattleMaterial, 0);
             }
         }
-
         public override void Tick()
         {
             base.Tick();
-            if (InUse && Find.TickManager.TicksGame >= nextTurnTick)
+            if (InUse && Find.TickManager.TicksGame >= nextTurnTick && !winnerIsDetermined)
             {
-                if (curGameStageInd < curBattleSet.battleSetTextures.Count - 1)
+                if (curGameStageInd < curBattleSetDef.battleSetTextures.Count - 1)
                 {
                     curGameStageInd++;
-                    nextTurnTick = Find.TickManager.TicksGame + curBattleSet.battleSetTextures[curGameStageInd].ticksInterval.RandomInRange;
+                    nextTurnTick = Find.TickManager.TicksGame + curBattleSetDef.battleSetTextures[curGameStageInd].ticksInterval.RandomInRange;
                     dirty = true;
-                }
-                else
-                {
-
                 }
             }
         }
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Defs.Look(ref curBattleSet, "curBattleSet");
-            Scribe_Values.Look(ref curGameTick, "curGameTick");
-            Scribe_Values.Look(ref curGameStageInd, "curGameStageInd");
-            Scribe_Values.Look(ref nextTurnTick, "nextTurnTick");
-        }
-
-        public bool IsGameFinished => curGameStageInd == curBattleSet.battleSetTextures.Count - 1;
+        public bool IsGameFinished => winnerIsDetermined && Find.TickManager.TicksGame >= nextTurnTick;
+        public bool LastTurn => curGameStageInd == curBattleSetDef.battleSetTextures.Count - 1 && !winnerIsDetermined && Find.TickManager.TicksGame >= nextTurnTick;
         public override IEnumerable<Gizmo> GetGizmos()
         {
             foreach (var g in base.GetGizmos())
@@ -151,7 +180,7 @@ namespace RimEffectExtendedCut
             }
             yield return new Command_Action()
             {
-                defaultLabel = "RE.SelectBattleSet".Translate(this.curBattleSet.label),
+                defaultLabel = "RE.SelectBattleSet".Translate(this.curBattleSetDef.label),
                 defaultDesc = "RE.SelectBattleSetDesc".Translate(),
                 icon = ContentFinder<Texture2D>.Get("UI/Icons/SelectBattleset"),
                 action = delegate ()
@@ -167,7 +196,7 @@ namespace RimEffectExtendedCut
             {
                 yield return new FloatMenuOption(def.label, delegate()
                 {
-                    this.curBattleSet = def;
+                    this.curBattleSetDef = def;
                     this.curGameStageInd = 0;
                 }, MenuOptionPriority.Default);
             }

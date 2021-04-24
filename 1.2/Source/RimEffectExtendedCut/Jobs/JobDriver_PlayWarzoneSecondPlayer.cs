@@ -23,18 +23,21 @@ namespace RimEffectExtendedCut
             Toil doPlay = new Toil();
             doPlay.tickAction = delegate
             {
+                JoyUtility.JoyTickCheckEnd(pawn, JoyTickFullJoyAction.None);
+                pawn.skills.Learn(SkillDefOf.Intellectual, 0.02f);
+                pawn.GainComfortFromCellIfPossible();
                 if (Building_Warzone.IsGameFinished)
                 {
                     ReadyForNextToil();
-                }
-                else
-                {
-                    JoyUtility.JoyTickCheckEnd(pawn);
                 }
             };
             doPlay.defaultCompleteMode = ToilCompleteMode.Never;
             doPlay.activeSkill = (() => SkillDefOf.Intellectual);
             doPlay.socialMode = RandomSocialMode.Normal;
+            doPlay.AddFinishAction(delegate
+            {
+                JoyUtility.TryGainRecRoomThought(pawn);
+            });
             yield return doPlay;
         }
     }

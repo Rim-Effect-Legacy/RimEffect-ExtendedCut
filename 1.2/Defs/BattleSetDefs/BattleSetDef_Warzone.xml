@@ -4,42 +4,75 @@
 	<RimEffectExtendedCut.BattleSetDef>
 		<defName>RE_FirstContactWarBattleSet</defName>
 		<label>first contact war</label>
-		<battleSetGraphicData>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,4)</drawSize>
-		</battleSetGraphicData>
 		<battleSetTextures>
 			<li>
 				<ticksInterval>100~120</ticksInterval>
-				<texPath>UI/BattleSets/FirstContactWar/BattleStart_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleStart</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 			<li>
 				<ticksInterval>100~120</ticksInterval>
-				<texPath>UI/BattleSets/FirstContactWar/BattleA_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleA</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 			<li>
 				<ticksInterval>100~120</ticksInterval>
-				<texPath>UI/BattleSets/FirstContactWar/BattleB_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleB</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 			<li>
 				<ticksInterval>100~120</ticksInterval>
-				<texPath>UI/BattleSets/FirstContactWar/BattleC_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleC</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 			<li>
 				<ticksInterval>100~120</ticksInterval>
-				<texPath>UI/BattleSets/FirstContactWar/BattleD_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleD</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 		</battleSetTextures>
 		<winningTextures>
 			<li>
+				<ticksInterval>100~120</ticksInterval>
 				<playerA>Win</playerA>
 				<playerB>Lose</playerB>
-				<texPath>UI/BattleSets/FirstContactWar/BattleWinA_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleWinA</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 			<li>
+				<ticksInterval>100~120</ticksInterval>
 				<playerA>Lose</playerA>
 				<playerB>Win</playerB>
-				<texPath>UI/BattleSets/FirstContactWar/BattleWinB_east</texPath>
+				<graphicData>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2,4)</drawSize>
+					<texPath>UI/BattleSets/FirstContactWar/BattleWinB</texPath>
+				</graphicData>
+				<soundDef>RE_BattleTable_Change</soundDef>
 			</li>
 		</winningTextures>
 	</RimEffectExtendedCut.BattleSetDef>
