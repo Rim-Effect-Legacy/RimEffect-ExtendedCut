@@ -142,7 +142,7 @@ namespace RimEffectExtendedCut
             Thing dummyThing = null;
             if (Props.spawnGlowerInFacedCell)
             {
-                dummyThing = ThingMaker.MakeThing(ThingDef.Named("RE_WallLightDummy"));
+                dummyThing = ThingMaker.MakeThing(ThingDef.Named("RE_WallLightDummyWorkaround"));
                 var cellGlower = this.parent.Position + base.parent.Rotation.FacingCell;
                 GenSpawn.Spawn(dummyThing, cellGlower, this.parent.Map);
                 this.compGlower.parent = dummyThing as ThingWithComps;
@@ -170,7 +170,6 @@ namespace RimEffectExtendedCut
         {
             if (!this.currentColor.texPath.NullOrEmpty())
             {
-
                 var graphicData = new GraphicData();
                 graphicData.graphicClass = this.parent.def.graphicData.graphicClass;
                 graphicData.texPath = this.currentColor.texPath;

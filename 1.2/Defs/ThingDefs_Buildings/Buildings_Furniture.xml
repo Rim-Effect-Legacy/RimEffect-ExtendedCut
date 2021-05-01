@@ -104,6 +104,26 @@
 		<designationHotKey>Misc11</designationHotKey>
 	</ThingDef>
 
+	<ThingDef>
+		<defName>RE_WallLightDummyWorkaround</defName>
+		<label>dummy</label>
+		<description>dummy</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/PartySpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+		</statBases>
+		<rotatable>false</rotatable>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<passability>Standable</passability>
+		<designationHotKey>Misc11</designationHotKey>
+	</ThingDef>
+	
 	<!--============================== Outdoor Lamps ==============================-->
 	<ThingDef Abstract="True" Name="RE_PrefabOutdoorLampBase" ParentName="BuildingBase">
 		<thingClass>Building</thingClass>
