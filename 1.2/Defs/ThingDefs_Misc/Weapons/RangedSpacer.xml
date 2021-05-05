@@ -34,6 +34,7 @@
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
 			<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+			<MarketValue>1500</MarketValue>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RE_AcceleratorWeaponry</li>
@@ -115,6 +116,7 @@
 			<AccuracyMedium>0.55</AccuracyMedium>
 			<AccuracyLong>0.55</AccuracyLong>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<MarketValue>1700</MarketValue>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RE_SpacerWeaponry</li>
@@ -201,6 +203,7 @@
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.82</AccuracyLong>
 			<RangedWeapon_Cooldown>2.50</RangedWeapon_Cooldown>
+			<MarketValue>1400</MarketValue>
 		</statBases>
 		<equippedAngleOffset>50</equippedAngleOffset>
 		<thingSetMakerTags>
@@ -291,6 +294,7 @@
 			<AccuracyMedium>0.84</AccuracyMedium>
 			<AccuracyLong>0.82</AccuracyLong>
 			<RangedWeapon_Cooldown>1.90</RangedWeapon_Cooldown>
+			<MarketValue>1550</MarketValue>
 		</statBases>
 		<equippedAngleOffset>50</equippedAngleOffset>
 		<recipeMaker>
@@ -388,6 +392,7 @@
 		<statBases>
 			<Mass>3.2</Mass>
 			<RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
+			<MarketValue>2400</MarketValue>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RE_RareWeaponry</li>
