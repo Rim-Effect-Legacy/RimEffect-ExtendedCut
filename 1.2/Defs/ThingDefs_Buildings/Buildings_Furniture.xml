@@ -173,7 +173,7 @@
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
-			<drawSize>(0.8,0.8)</drawSize>
+			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
 		<costList>
 			<RE_PrefabComponent>2</RE_PrefabComponent>
