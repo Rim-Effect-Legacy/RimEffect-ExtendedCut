@@ -40,7 +40,7 @@ namespace RimEffectExtendedCut
 			{
 				if (def == RE_DefOf.RE_HolovisionTable)
 				{
-					__result = GenAdj.OccupiedRect(center, rot, def.size).ExpandedBy(3);
+					__result = GenAdj.OccupiedRect(center, rot, def.size).ExpandedBy(2);
 					return false;
 				}
 				return true;

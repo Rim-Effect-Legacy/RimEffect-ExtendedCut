@@ -95,7 +95,7 @@ namespace RimEffectExtendedCut
 			if (compGlowerExtended != null)
             {
 				var localHour = GenLocalDate.HourOfDay(this.parent.Map);
-				if (localHour >= 6 && localHour <= 20)
+				if (localHour >= 6 && localHour <= 18)
                 {
 					if (compGlowerExtended.compGlower != null)
 					{
