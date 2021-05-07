@@ -4,7 +4,7 @@
 	<ThingDef ParentName="MealCooked">
 		<defName>RE_MealColonial</defName>
 		<label>colonial meal</label>
-		<description>An extremely variety meal focusing on variety and over quantity. Commonly found in alliance colonies.</description>
+		<description>Focusing on variety over quality, colonial meals are fast and easy to cook while still providing the consumer with a healthy amount of nutrition. Commonly found in alliance colonies.</description>
 		<graphicData>
 			<texPath>Things/Item/Meal/Colonial</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

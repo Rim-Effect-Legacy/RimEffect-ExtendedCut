@@ -34,7 +34,7 @@
 			<AccuracyShort>0.44</AccuracyShort>
 			<AccuracyMedium>0.35</AccuracyMedium>
 			<AccuracyLong>0.25</AccuracyLong>
-			<RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RE_AcceleratorWeaponry</li>
@@ -173,7 +173,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.15</armorPenetrationBase>
 			<stoppingPower>2.5</stoppingPower>
 			<speed>80</speed>
@@ -307,7 +307,7 @@
 		</recipeMaker>
 		<costList>
 			<Plasteel>55</Plasteel>
-			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<weaponTags Inherit='False'>
 			<li>AllianceGunSniper</li>
@@ -378,9 +378,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGunWithQuality">
-		<defName>RE_Gun_ChakramLauncher</defName>
+		<defName>RE_Gun_SpacerChakramLauncher</defName>
 		<label>chakram launcher</label>
-		<description>A wide-barreled incendiary bolt launcher. The bolts create small incendiary explosions on impact, starting fires.</description>
+		<description>A wide-barreled chakram disk launcher. The disks stick to the surface they hit and create small incendiary explosions after a short time, starting fires.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChakramLauncher</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
