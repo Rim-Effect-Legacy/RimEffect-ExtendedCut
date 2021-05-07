@@ -42,47 +42,8 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RE_DoorBase">
-		<defName>RE_PrefabAutoDoorRecreation</defName>
-		<label>prefab autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Door/PrefabDoorRec_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData>
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Door/PrefabDoorRec_MenuIcon</uiIconPath>
-		<costList>
-			<RE_PrefabComponent>2</RE_PrefabComponent>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-		<costStuffCount>15</costStuffCount>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>25</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Door/PrefabDoorRec_Blureprint</texPath>
-			</blueprintGraphicData>
-		</building>
-		<researchPrerequisites>
-			<li>RE_BasicPrefabrication</li>
-		</researchPrerequisites>
-		<stuffCategories Inherit='False'>
-			<li>Metallic</li>
-		</stuffCategories>
-		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-	</ThingDef>
-
-	<ThingDef ParentName="RE_DoorBase">
 		<defName>RE_PrefabAutoDoorIndustrial</defName>
-		<label>prefab autodoor</label>
+		<label>prefab industrial autodoor</label>
 		<description>A heavy steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<thingClass>RimEffect.Building_AutoDoorLockable</thingClass>
 		<graphicData>

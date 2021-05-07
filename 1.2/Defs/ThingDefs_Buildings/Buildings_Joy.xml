@@ -18,7 +18,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<staticSunShadowHeight>0.2</staticSunShadowHeight>
 		<castEdgeShadows>false</castEdgeShadows>
 		<altitudeLayer>Building</altitudeLayer>
 		<socialPropernessMatters>true</socialPropernessMatters>
