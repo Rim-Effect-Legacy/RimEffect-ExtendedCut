@@ -41,8 +41,14 @@ namespace RimEffectExtendedCut
                 {
 					if (table.LastTurn)
 					{
-						var winner = Rand.Bool ? pawn : this.TargetB.Pawn;
-						table.SelectWinner(winner);
+						if (Rand.Bool)
+                        {
+							table.SelectWinner(pawn, this.TargetB.Pawn);
+						}
+						else
+                        {
+							table.SelectWinner(this.TargetB.Pawn, pawn);
+						}
 					}
 					else if (table.IsGameFinished)
 					{

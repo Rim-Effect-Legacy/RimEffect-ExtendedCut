@@ -110,9 +110,9 @@ namespace RimEffectExtendedCut
             curGameStageInd = 0;
         }
 
-        public void SelectWinner(Pawn pawn)
+        public void SelectWinner(Pawn winner, Pawn loser)
         {
-            if (pawn == user)
+            if (winner == user)
             {
                 winningBattleSet = this.curBattleSetDef.winningTextures.FirstOrDefault(x => x.playerA == BattleCondition.Win);
             }
@@ -123,6 +123,14 @@ namespace RimEffectExtendedCut
             nextTurnTick = Find.TickManager.TicksGame + winningBattleSet.ticksInterval.RandomInRange;
             dirty = true;
             winnerIsDetermined = true;
+            if (winningBattleSet.playerWonThought != null)
+            {
+                winner.needs?.mood?.thoughts?.memories?.TryGainMemory(winningBattleSet.playerWonThought);
+            }
+            if (winningBattleSet.playerLoseThought != null)
+            {
+                loser.needs?.mood?.thoughts?.memories?.TryGainMemory(winningBattleSet.playerWonThought);
+            }
         }
         public Material BattleMaterial
         {

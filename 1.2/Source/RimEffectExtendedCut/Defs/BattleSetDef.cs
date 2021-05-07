@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,9 @@ namespace RimEffectExtendedCut
 		public IntRange ticksInterval;
 		public BattleCondition playerA;
 		public BattleCondition playerB;
+
+		public ThoughtDef playerWonThought;
+		public ThoughtDef playerLoseThought;
 		public GraphicData graphicData;
 		public SoundDef soundDef;
 		public void ExposeData()
