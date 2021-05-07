@@ -18,7 +18,7 @@
 		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
-				<label>ate colonial meal</label>
+				<label>I won!</label>
 				<description>I won a game at the warzone table!</description>
 				<baseMoodEffect>14</baseMoodEffect>
 			</li>
@@ -30,7 +30,7 @@
 		<durationDays>0.5</durationDays>
 		<stages>
 			<li>
-				<label>ate colonial meal</label>
+				<label>I lost...</label>
 				<description>I lost a game at the warzone table...</description>
 				<baseMoodEffect>14</baseMoodEffect>
 			</li>
