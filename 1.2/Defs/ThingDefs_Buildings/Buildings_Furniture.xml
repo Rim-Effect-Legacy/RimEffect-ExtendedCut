@@ -5,7 +5,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_PreFabWallLight</defName>
 		<label>prefab wall light</label>
-		<description>A wall light designed to be quickly and easily assembled in the process of setting up a new colony.</description>
+		<description>A wall light designed to be quickly and easily assembled in the process of setting up a new colony. Does not take up any space inside a room.</description>
 		<thingClass>RimEffectExtendedCut.Building_WallLight</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -49,7 +49,6 @@
 		<canOverlapZones>true</canOverlapZones>
 		<uiIconPath>Things/Building/Furniture/PreFabWallLight/UIPreFabWallLight</uiIconPath>
 		<researchPrerequisites>
-			<li>ColoredLights</li>
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
 		<techLevel>Ultra</techLevel>
@@ -169,7 +168,7 @@
 	<ThingDef ParentName="RE_PrefabOutdoorLampBase" >
 		<defName>RE_PrefabOutdoorLamp</defName>
 		<label>prefab outdoor lamp</label>
-		<description>An self-powered electrical standing lamp for outdoor use designed to be quickly and easily assembled in the process of setting up a new colony.</description>
+		<description>A self-powered electrical standing lamp for outdoor use designed to be quickly and easily assembled in the process of setting up a new colony.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
@@ -177,7 +176,7 @@
 		</graphicData>
 		<costList>
 			<RE_PrefabComponent>2</RE_PrefabComponent>
-			<Steel>5</Steel>
+			<Steel>15</Steel>
 		</costList>
 		<statBases>
 			<Mass>4</Mass>

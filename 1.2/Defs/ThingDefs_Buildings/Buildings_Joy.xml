@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_BattleTable</defName>
-		<label>prefab warzone table</label>
-		<description>placeholder</description>
+		<label>warzone table</label>
+		<description>A long, prefab high-tech table with a giant holographic area displaying ships, planets and stations in realistic combat simulations. It is the successor to the vastly popular game Kepesh-Yakshi, or "space-chess" as humans often refer to it.</description>
 		<thingClass>RimEffectExtendedCut.Building_WarzoneTable</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
@@ -51,8 +51,9 @@
 			</li>
 		</comps>
 		<costList>
-			<Plasteel>150</Plasteel>
 			<RE_PrefabComponent>12</RE_PrefabComponent>
+			<Plasteel>80</Plasteel>
+			<Steel>75</Steel>
 		</costList>
 		<pathCost>42</pathCost>
 		<passability>PassThroughOnly</passability>
@@ -78,14 +79,15 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>280</MaxHitPoints>
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>10</Mass>
 			<JoyGainFactor>1.8</JoyGainFactor>
 		</statBases>
 		<costList>
-			<Plasteel>115</Plasteel>
-			<RE_PrefabComponent>24</RE_PrefabComponent>
+			<RE_PrefabComponent>9</RE_PrefabComponent>
+			<Plasteel>50</Plasteel>
+			<Steel>40</Steel>
 		</costList>
 		<building>
 			<joyKind>RE_Holovision</joyKind>

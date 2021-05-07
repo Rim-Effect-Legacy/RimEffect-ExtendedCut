@@ -3,7 +3,7 @@
 
     <ThingDef ParentName="BuildingBase">
         <defName>RE_PreFabCOntainer</defName>
-        <label>cargo container</label>
+        <label>prefab cargo container</label>
         <description>A orange prefabricated cargo container. Impassable. Cannot hold roof.</description>
         <graphicData>
             <texPath>Things/Building/Props/PreFabCrateBig/PreFabCrateBig</texPath>
@@ -13,6 +13,10 @@
                 <volume>(0.55, 0.30, 0.40)</volume>
             </shadowData>
         </graphicData>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<techLevel>Ultra</techLevel>
         <altitudeLayer>Building</altitudeLayer>
         <defaultPlacingRot>South</defaultPlacingRot>
         <castEdgeShadows>True</castEdgeShadows>
@@ -29,7 +33,8 @@
         </statBases>
         <size>(2,4)</size>
         <costList>
-            <Steel>60</Steel>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
+            <Steel>40</Steel>
         </costList>
         <designationCategory>PropsandDecor</designationCategory>
         <uiIconScale>1</uiIconScale>

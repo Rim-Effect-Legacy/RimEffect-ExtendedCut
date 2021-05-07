@@ -21,8 +21,9 @@
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
 		<costList>
-			<Steel>40</Steel>
-			<RE_PrefabComponent>4</RE_PrefabComponent>
+			<RE_PrefabComponent>3</RE_PrefabComponent>
+			<Steel>30</Steel>
+			<Plasteel>5</Plasteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
