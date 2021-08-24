@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>RE_AteColonialMeal</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate colonial meal</label>
+				<description>That colonial meal was incredible. The variety of ingredients really lifts the spirit.</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>RE_BattelTableWon</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>I won!</label>
+				<description>I won a game at the warzone table!</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>RE_BattelTableLost</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>I lost...</label>
+				<description>I lost a game at the warzone table...</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

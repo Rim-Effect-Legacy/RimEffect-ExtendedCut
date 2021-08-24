@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>RE_PrefabOutdoorLampsPower</defName>
+		<label>Prefab Outdoor Lamps</label>
+		<helpText>Prefab Outdoor lamps power themselves, charging off the sunlight during the day and using their battery at night to light the area around them. They do not connect to power grids!</helpText>
+	</ConceptDef>
+	
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>RE_PrefabWallLamps</defName>
+		<label>Prefab Wall Lamps</label>
+		<helpText>Prefab Wall lamps are placed directly on walls and therefore are ideal for hallways or small rooms where one does not want to waste space on a lamp.</helpText>
+	</ConceptDef>
+
+</Defs>
