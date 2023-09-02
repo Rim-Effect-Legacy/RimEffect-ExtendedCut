@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fgl0ZIdhNwQgiWispkH3LaU61yzFDIo10Ei9dYDkZXuAmsQBQtGNTMDMtJJP7sEgzPegb0O0FFKtSO3g5HuXHg==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimEffect-ExtendedCut\\1.4\\Source\\RimEffectExtendedCut\\RimEffectExtendedCut.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3704\\krafs.rimworld.ref.1.4.3704.nupkg.sha512",
+    "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

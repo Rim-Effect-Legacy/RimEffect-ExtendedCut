@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JoyKindDef>
+		<defName>RE_Holovision</defName>
+		<label>holovision watching</label>
+	</JoyKindDef>
+
+	<JobDef>
+		<defName>RE_WatchHolovision</defName>
+		<driverClass>JobDriver_WatchTelevision</driverClass>
+		<reportString>watching holovision.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>8</joyMaxParticipants>
+		<joyKind>RE_Holovision</joyKind>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JoyGiverDef>
+		<defName>RE_WatchHolovision</defName>
+		<giverClass>JoyGiver_WatchBuilding</giverClass>
+		<baseChance>3.5</baseChance>
+		<canDoWhileInBed>true</canDoWhileInBed>
+		<desireSit>false</desireSit>
+		<thingDefs>
+			<li>RE_HolovisionTable</li>
+		</thingDefs>
+		<jobDef>RE_WatchHolovision</jobDef>
+		<joyKind>RE_Holovision</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+	<JobDef>
+		<defName>RE_Play_Warzone</defName>
+		<driverClass>RimEffectExtendedCut.JobDriver_PlayWarzone</driverClass>
+		<reportString>playing warzone with TargetB.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>2</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.002</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+	</JobDef>
+
+	<JobDef>
+		<defName>RE_Play_WarzoneSecondPlayer</defName>
+		<driverClass>RimEffectExtendedCut.JobDriver_PlayWarzoneSecondPlayer</driverClass>
+		<reportString>playing warzone with TargetB.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>2</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.002</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+	</JobDef>
+
+	<JoyGiverDef>
+		<defName>RE_Play_Warzone</defName>
+		<giverClass>RimEffectExtendedCut.JoyGiver_PlayWarzone</giverClass>
+		<baseChance>2</baseChance>
+		<thingDefs>
+			<li>RE_BattleTable</li>
+		</thingDefs>
+		<jobDef>RE_Play_Warzone</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+</Defs>

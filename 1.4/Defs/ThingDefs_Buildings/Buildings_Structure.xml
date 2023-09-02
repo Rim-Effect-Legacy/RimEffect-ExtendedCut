@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============================== Doors ==============================-->
+	<ThingDef ParentName="RE_DoorBase">
+		<defName>RE_PrefabDoorColonial</defName>
+		<label>prefab colonial autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>VFECore.Building_AutoDoorLockable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Door/PrefabDoorColonial_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/PrefabDoorColonial_MenuIcon</uiIconPath>
+		<costList>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorColonial_Blueprint</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+			<li>Metallic</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_DoorBase">
+		<defName>RE_PrefabAutoDoorIndustrial</defName>
+		<label>prefab industrial autodoor</label>
+		<description>A heavy steel door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<thingClass>VFECore.Building_AutoDoorLockable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Door/PrefabDoorWorkshop_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/PrefabDoorWorkshop_MenuIcon</uiIconPath>
+		<costList>
+			<RE_PrefabComponent>3</RE_PrefabComponent>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/PrefabDoorWorkshop_Blueprint</texPath>
+			</blueprintGraphicData>
+		</building>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<stuffCategories Inherit='False'>
+			<li>Metallic</li>
+		</stuffCategories>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>

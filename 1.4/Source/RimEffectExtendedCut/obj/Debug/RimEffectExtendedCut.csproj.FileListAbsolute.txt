@@ -1,0 +1,17 @@
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Assemblies\RimEffectExtendedCut.dll
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Assemblies\RimEffectExtendedCut.pdb
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CopyComplete
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.dll
+c:\GAMES\Rimworld\Mods\RimEffect-Core-ExtendedCut\1.2\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.3\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.3\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.3\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.3\Assemblies\RimEffectExtendedCut.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.3\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.4\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.4\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.4\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.4\Assemblies\RimEffectExtendedCut.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-ExtendedCut\1.4\Source\RimEffectExtendedCut\obj\Debug\RimEffectExtendedCut.csproj.CopyComplete

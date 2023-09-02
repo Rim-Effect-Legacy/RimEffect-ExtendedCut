@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<EffecterDef>
+		<defName>RE_WatchingHolovision</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>RE_HolovisionTable_Ambience</soundDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>PlainFlash</fleckDef>
+				<spawnLocType>RandomCellOnTarget</spawnLocType>
+				<chancePerTick>0.05</chancePerTick>
+				<color>(1,1,1,0.1)</color>
+				<scale>1.5~3</scale>
+			</li>
+		</children>
+	</EffecterDef>
+
+</Defs>
