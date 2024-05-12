@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6P6SeBGu2a+yF61eBvoumkxcv4Glm150r3ZlUJYQkkYGD9O9v16mhOLaB9y7/DYUhEJ1qPzZsT/2IqsNBPlt5g==",
+  "success": true,
+  "projectFilePath": "F:\\RWModCategories\\Neronix17\\RimEffect\\RimEffect-ExtendedCut\\1.5\\Source\\RimEffectExtendedCut\\RimEffectExtendedCut.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dean\\.nuget\\packages\\lib.harmony\\2.3.3\\lib.harmony.2.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\RWModCategories\\Neronix17\\RimEffect\\RimEffect-ExtendedCut\\1.5\\Source\\RimEffectExtendedCut\\RimEffectExtendedCut.csproj": {}
+  },
+  "projects": {
+    "F:\\RWModCategories\\Neronix17\\RimEffect\\RimEffect-ExtendedCut\\1.5\\Source\\RimEffectExtendedCut\\RimEffectExtendedCut.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\RWModCategories\\Neronix17\\RimEffect\\RimEffect-ExtendedCut\\1.5\\Source\\RimEffectExtendedCut\\RimEffectExtendedCut.csproj",
+        "projectName": "RimEffectExtendedCut",
+        "projectPath": "F:\\RWModCategories\\Neronix17\\RimEffect\\RimEffect-ExtendedCut\\1.5\\Source\\RimEffectExtendedCut\\RimEffectExtendedCut.csproj",
+        "packagesPath": "C:\\Users\\Dean\\.nuget\\packages\\",
+        "outputPath": "F:\\RWModCategories\\Neronix17\\RimEffect\\RimEffect-ExtendedCut\\1.5\\Source\\RimEffectExtendedCut\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dean\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.3.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

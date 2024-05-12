@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef Abstract="True" ParentName="FloorBase" Name="RE_TileStoneBase">
+        <renderPrecedence>220</renderPrecedence>
+        <description>Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+        <texturePath>Terrain/Surfaces/ColonialRecRoomTile</texturePath>
+        <statBases>
+            <WorkToBuild>1100</WorkToBuild>
+            <Beauty>6</Beauty>
+        </statBases>
+        <designatorDropdown>RE_ColonialRecRoomStoneTile</designatorDropdown>
+		<constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>RE_BasicPrefabrication</li>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_TileStoneBase">
+        <defName>RE_ColonialRecRoomTileSandstone</defName>
+        <label>sandstone colonial recreation tile</label>
+        <color>(126,104,94)</color>
+        <costList>
+            <BlocksSandstone>12</BlocksSandstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_TileStoneBase">
+        <defName>RE_ColonialRecRoomTileGranite</defName>
+        <label>granite colonial recreation tile</label>
+        <color>(105,95,97)</color>
+        <costList>
+            <BlocksGranite>12</BlocksGranite>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_TileStoneBase">
+        <defName>RE_ColonialRecRoomTileLimestone</defName>
+        <label>limestone colonial recreation tile</label>
+        <color>(158,153,135)</color>
+        <costList>
+            <BlocksLimestone>12</BlocksLimestone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_TileStoneBase">
+        <defName>RE_ColonialRecRoomTileSlate</defName>
+        <label>slate colonial recreation tile</label>
+        <color>(100,100,100)</color>
+        <costList>
+            <BlocksSlate>12</BlocksSlate>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RE_TileStoneBase">
+        <defName>RE_ColonialRecRoomTileMarble</defName>
+        <label>marble colonial recreation tile</label>
+        <color>(132,135,132)</color>
+        <costList>
+            <BlocksMarble>12</BlocksMarble>
+        </costList>
+    </TerrainDef>
+
+</Defs>

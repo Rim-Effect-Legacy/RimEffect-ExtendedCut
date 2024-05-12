@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RE_PreFabCOntainer</defName>
+        <label>prefab cargo container</label>
+        <description>A orange prefabricated cargo container. Impassable. Cannot hold roof.</description>
+        <graphicData>
+            <texPath>Things/Building/Props/PreFabCrateBig/PreFabCrateBig</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.5,4)</drawSize>
+            <shadowData>
+                <volume>(0.55, 0.30, 0.40)</volume>
+            </shadowData>
+        </graphicData>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
+		<techLevel>Ultra</techLevel>
+        <altitudeLayer>Building</altitudeLayer>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <castEdgeShadows>True</castEdgeShadows>
+        <blockWind>true</blockWind>
+        <passability>Impassable</passability>
+        <fillPercent>1</fillPercent>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <repairEffect>ConstructMetal</repairEffect>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>500</WorkToBuild>
+            <Mass>100</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <size>(2,4)</size>
+        <costList>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
+            <Steel>40</Steel>
+        </costList>
+        <designationCategory>PropsandDecor</designationCategory>
+        <uiIconScale>1</uiIconScale>
+        <building>
+            <isInert>true</isInert>
+        </building>
+    </ThingDef>
+
+</Defs>

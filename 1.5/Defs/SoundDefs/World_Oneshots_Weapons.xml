@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>RE_Shot_Ballista</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Ballista/Ballista_Shot</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>45.2941~45.2941</volumeRange>      
+				<pitchRange>1.091765~1</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RE_Interact_Halberd</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Halberd/Interact_Halberd</clipPath>
+					</li>
+				</grains>
+				<volumeRange>25~25</volumeRange>      
+				<pitchRange>0.8728257~1.1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RE_Shot_Halberd</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Halberd/Shot_Halberd</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>45.2941~45.2941</volumeRange>      
+				<pitchRange>1.091765~1</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RE_Interact_Incisor</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Incisor/Interact_Incisor</clipPath>
+					</li>
+				</grains>
+				<volumeRange>25~25</volumeRange>      
+				<pitchRange>0.8728257~1.1</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RE_Shot_Incisor</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Incisor/Shot_Incisor</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>45.2941~45.2941</volumeRange>      
+				<pitchRange>1.091765~1</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RE_Shot_Chakram</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Chakram/Shot_Chakram</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>45.2941~45.2941</volumeRange>      
+				<pitchRange>1.091765~1</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

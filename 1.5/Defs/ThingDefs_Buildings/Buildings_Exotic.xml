@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>RE_CrashedThemisShuttle</defName>
+        <label>crashed themis shuttle</label>
+        <description>A crashed spacer-tech cargo shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>150</pathCost>
+        <blockWind>true</blockWind>
+        <passability>Impassable</passability>
+        <fillPercent>1.0</fillPercent>
+        <size>(10,6)</size>
+        <graphicData>
+            <texPath>Things/Building/Misc/ThemisShuttle/CrashedThemisShuttle</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(10,10)</drawSize>
+            <shadowData>
+                <volume>(1.8, 1.0, 4.1)</volume>
+                <offset>(0, 0, -0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>1200</MaxHitPoints>
+            <Flammability>4.0</Flammability>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <killedLeavings>
+            <Plasteel>320</Plasteel>
+            <ChunkSlagSteel>8</ChunkSlagSteel>
+            <ComponentSpacer>8</ComponentSpacer>
+        </killedLeavings>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+		<defaultPlacingRot>West</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <drawerType>MapMeshOnly</drawerType>
+        <repairEffect>ConstructMetal</repairEffect>
+        <forceDebugSpawnable>true</forceDebugSpawnable>
+        <building>
+            <claimable>false</claimable>
+            <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <comps></comps>
+        <costList>
+            <Plasteel>450</Plasteel>
+            <ComponentSpacer>24</ComponentSpacer>
+        </costList>
+        <techLevel>Ultra</techLevel>
+    </ThingDef>
+
+</Defs>

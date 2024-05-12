@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RE_VisorBase">
+		<defName>RE_Apparel_CapacitorHelmet</defName>
+		<label>capacitor helmet</label>
+		<description>This helmet stores microcapacitors in its structure to replenish spent kinetic barriers. The transpari-plast armor panel on its top can be removed to access capacitors for field maintenance.</description>
+		<graphicData>
+			<texPath>Things/Apparel/CapacitorHelmet/CapacitorHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/CapacitorHelmet/CapacitorHelmet</wornGraphicPath>
+			<tags>
+				<li>RE_AllianceArmoury</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>1800</MarketValue>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-1</Beauty>
+			<Mass>1.5</Mass>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<tradeTags>
+			<li>RE_AllianceArmoury</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RE_AllianceArmoury</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_VisorBase">
+		<defName>RE_Apparel_ArchonVisor</defName>
+		<label>archon visor</label>
+		<description>A targeting computer that helps the user aim. It detects and analyzes targets using infrared, visible, and millimeter-wave electromagnetic sensors. An onboard targeting computer displays firing solutions on a retinal projection. It offers no protection at all.</description>
+		<graphicData>
+			<texPath>Things/Apparel/ArchonVisor/ArchonVisor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/ArchonVisor/ArchonVisor</wornGraphicPath>
+			<tags>
+				<li>RE_AllianceArmoury</li>
+			</tags>
+		</apparel>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>1850</MarketValue>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-3</Beauty>
+			<Mass>1.0</Mass>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+		</statBases>
+		<tradeTags>
+			<li>RE_AllianceArmoury</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RE_AllianceArmoury</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

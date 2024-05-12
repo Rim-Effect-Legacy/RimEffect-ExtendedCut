@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_BattleTable</defName>
+		<label>warzone table</label>
+		<description>A long, prefab high-tech table with a giant holographic area displaying ships, planets and stations in realistic combat simulations. It is the successor to the vastly popular game Kepesh-Yakshi, or "space-chess" as humans often refer to it.</description>
+		<thingClass>RimEffectExtendedCut.Building_WarzoneTable</thingClass>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Building/Joy/WarzoneTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,6)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<JoyGainFactor>1.3</JoyGainFactor>
+		</statBases>
+		<size>(3,5)</size>
+		<comps>
+			<li Class="RimEffectExtendedCut.CompProperties_BattleTable">
+				<interactionCellOffsets>
+					<li>(0,0,3)</li>
+					<li>(0,0,-3)</li>
+				</interactionCellOffsets>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+		</comps>
+		<costList>
+			<RE_PrefabComponent>12</RE_PrefabComponent>
+			<Plasteel>80</Plasteel>
+			<Steel>75</Steel>
+		</costList>
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>Joy</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>RE_ComplexPrefabrication</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_HolovisionTable</defName>
+		<label>holovision table</label>
+		<description>A round, prefabricated high-tech holovision table. Gigantic, hyper-vibrant hologramss rotate around the center on the users wish. Connects to Alliance media networks and picks up transmissions from ancient satellites and ubiquitous data cards.</description>
+		<graphicData>
+			<texPath>Things/Building/Joy/HolovisionTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>10</Mass>
+			<JoyGainFactor>1.8</JoyGainFactor>
+		</statBases>
+		<costList>
+			<RE_PrefabComponent>9</RE_PrefabComponent>
+			<Plasteel>50</Plasteel>
+			<Steel>40</Steel>
+		</costList>
+		<building>
+			<joyKind>RE_Holovision</joyKind>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>RE_WatchingHolovision</effectWatching>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<castEdgeShadows>false</castEdgeShadows>
+		<thingClass>Building</thingClass>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<designationCategory>Joy</designationCategory>
+		<pathCost>42</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<canOverlapZones>false</canOverlapZones>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<passability>PassThroughOnly</passability>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RE_ComplexPrefabrication</li>
+		</researchPrerequisites>
+		<techLevel>Ultra</techLevel>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(103,133,157,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- RE_PrefabEndTableWithLamp -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]/comps</xpath>
+				<success>Always</success>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]</xpath>
+					<value>
+						<comps />
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]</xpath>
+				<value>
+					<tickerType>Normal</tickerType>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabEndTableWithLamp"]/comps</xpath>
+				<value>
+					<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+						<colorOptions>
+							<li>
+								<glowRadius>10</glowRadius>
+								<glowColor>(152,167,250,0)</glowColor>
+								<colorLabel>blue</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabEndTableLamp/PrefabEndTableLamp</texPath>
+							</li>
+							<li>
+								<glowRadius>10</glowRadius>
+								<glowColor>(244,182,115,0)</glowColor>
+								<colorLabel>orange</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabEndTableLampOrange/PrefabEndTableLampOrange</texPath>
+							</li>
+						</colorOptions>
+					</li>
+				</value>
+			</li>
+			<!-- RE_PrefabBedsideTableLamp -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabBedsideTableLamp"]/comps</xpath>
+				<success>Always</success>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_PrefabBedsideTableLamp"]</xpath>
+					<value>
+						<comps />
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabBedsideTableLamp"]</xpath>
+				<value>
+					<tickerType>Normal</tickerType>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabBedsideTableLamp"]/comps</xpath>
+				<value>
+					<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+						<colorOptions>
+							<li>
+								<glowRadius>10</glowRadius>
+								<glowColor>(152,167,250,0)</glowColor>
+								<colorLabel>blue</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabBedsideTableLamp/PrefabBedsideTableLamp</texPath>
+							</li>
+							<li>
+								<glowRadius>10</glowRadius>
+								<glowColor>(244,182,115,0)</glowColor>
+								<colorLabel>orange</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabBedsideTableLampOrange/PrefabBedsideTableLampOrange</texPath>
+							</li>
+						</colorOptions>
+					</li>
+				</value>
+			</li>
+			<!-- RE_PrefabStandingLamp -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabStandingLamp"]/comps</xpath>
+				<success>Always</success>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_PrefabStandingLamp"]</xpath>
+					<value>
+						<comps />
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabStandingLamp"]</xpath>
+				<value>
+					<tickerType>Normal</tickerType>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RE_PrefabStandingLamp"]/comps</xpath>
+				<value>
+					<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+						<colorOptions>
+							<li>
+								<glowRadius>16</glowRadius>
+								<glowColor>(152,167,250,0)</glowColor>
+								<colorLabel>blue</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabStandingLamp/PrefabStandingLamp</texPath>
+							</li>
+							<li>
+								<glowRadius>16</glowRadius>
+								<glowColor>(244,182,115,0)</glowColor>
+								<colorLabel>orange</colorLabel>
+								<texPath>Things/Building/Furniture/PrefabStandingLampOrange/PrefabStandingLampOrange</texPath>
+							</li>
+						</colorOptions>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

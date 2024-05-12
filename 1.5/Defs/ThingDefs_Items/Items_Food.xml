@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>RE_MealColonial</defName>
+		<label>colonial meal</label>
+		<description>Focusing on variety over quality, colonial meals are fast and easy to cook while still providing the consumer with a healthy amount of nutrition. Commonly found in alliance colonies.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Colonial</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>22</MarketValue>
+			<WorkToMake>200</WorkToMake>
+			<Nutrition>0.8</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<tasteThought>RE_AteColonialMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+
+</Defs>
