@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--============================== Wall Lights ==============================-->
@@ -12,8 +12,12 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.1,1.1</drawSize>
+			<drawOffsetNorth>(0,0,1)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-1)</drawOffsetSouth>
+			<drawOffsetWest>(-1,0,0)</drawOffsetWest>
+			<drawOffsetEast>(1,0,0)</drawOffsetEast>
 		</graphicData>
-		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Standable</passability>
 		<fillPercent>0.20</fillPercent>
 		<statBases>
@@ -24,7 +28,7 @@
 		</statBases>
 		<size>(1, 1)</size>
 		<placeWorkers>
-			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+			<li>Placeworker_AttachedToWall</li>
 		</placeWorkers>
 		<costList>
 			<RE_PrefabComponent>1</RE_PrefabComponent>
@@ -35,7 +39,7 @@
 		<building>
 			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
+			<isAttachment>true</isAttachment>
 			<allowWireConnection>false</allowWireConnection>
 			<spawnedConceptLearnOpportunity>RE_PrefabWallLamps</spawnedConceptLearnOpportunity>
 			<boughtConceptLearnOpportunity>RE_PrefabWallLamps</boughtConceptLearnOpportunity>
@@ -54,30 +58,24 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>15</basePowerConsumption>
+				<basePowerConsumption>20</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>ColoredLights</researchProject>
+						<factor>0.5</factor>
+					</li>
+				</powerUpgrades>
 			</li>
 			<li Class="CompProperties_Flickable" />
-      			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>8</glowRadius>
-						<glowColor>(152,167,250,0)</glowColor>
-						<colorLabel>blue</colorLabel>
-						<texPath>Things/Building/Furniture/PreFabWallLight/PreFabWallLight</texPath>
-					</li>
-					<li>
-						<glowRadius>8</glowRadius>
-						<glowColor>(244,182,115,0)</glowColor>
-						<colorLabel>orange</colorLabel>
-						<texPath>Things/Building/Furniture/PreFabWallLightOrange/PreFabWallLightOrange</texPath>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>11</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<!--============================== Outdoor Lamps ==============================-->
 	<ThingDef Abstract="True" Name="RE_PrefabOutdoorLampBase" ParentName="BuildingBase">
 		<thingClass>Building</thingClass>
@@ -107,7 +105,7 @@
 			</damageData>
 		</graphicData>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
@@ -120,7 +118,7 @@
 		<techLevel>Ultra</techLevel>
 	</ThingDef>
 
-	<ThingDef ParentName="RE_PrefabOutdoorLampBase" >
+	<ThingDef ParentName="RE_PrefabOutdoorLampBase">
 		<defName>RE_PrefabOutdoorLamp</defName>
 		<label>prefab outdoor lamp</label>
 		<description>A self-powered electrical standing lamp for outdoor use designed to be quickly and easily assembled in the process of setting up a new colony.</description>
@@ -149,21 +147,11 @@
 			<li>Batteries</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<colorOptions>
-					<li>
-						<glowRadius>6</glowRadius>
-						<glowColor>(152,167,250,0)</glowColor>
-						<colorLabel>blue</colorLabel>
-						<texPath>Things/Building/Furniture/PreFabOutdoorLamp/PreFabOutdoorLamp</texPath>
-					</li>
-					<li>
-						<glowRadius>6</glowRadius>
-						<glowColor>(244,182,115,0)</glowColor>
-						<colorLabel>orange</colorLabel>
-						<texPath>Things/Building/Furniture/PreFabOutdoorLampOrange/PreFabOutdoorLampOrange</texPath>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
 			</li>
 			<li Class="RimEffectExtendedCut.CompProperties_OutDoorLamp">
 				<storedEnergyMax>50</storedEnergyMax>
