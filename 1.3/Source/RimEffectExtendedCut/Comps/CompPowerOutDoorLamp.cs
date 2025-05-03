@@ -100,7 +100,7 @@ namespace RimEffectExtendedCut
                 {
 					if (compGlowerExtended.compGlower != null)
 					{
-						compGlowerExtended.RemoveGlower();
+						compGlowerExtended.RemoveGlower(this.parent.Map);
 					}
 				}
 				else
@@ -109,7 +109,7 @@ namespace RimEffectExtendedCut
 					{
 						if (compGlowerExtended.compGlower != null)
 						{
-							compGlowerExtended.RemoveGlower();
+							compGlowerExtended.RemoveGlower(this.parent.Map);
 						}
 					}
 					else if (compGlowerExtended.compGlower == null)
